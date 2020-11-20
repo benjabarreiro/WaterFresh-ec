@@ -1,0 +1,14 @@
+section.index_section {
+    width: 85%;
+    position: relative;
+    left: 15%;
+    background-image: url('../../images/fondo5.webp');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+section.index_section h1 {
+    color: white;
+    font-size: 10rem;
+    text-align: center;
+}

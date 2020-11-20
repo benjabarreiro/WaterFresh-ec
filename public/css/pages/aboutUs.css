@@ -1,0 +1,36 @@
+section.aboutUs-section {
+    height: 100%;
+    width: 85%;
+    float: right;
+    background-image: url('../../images/fondo2.jpg');
+    background-size: cover;
+}
+
+section.aboutUs-section h2, p {
+    display: inline-flex;
+    color: white;
+}
+
+section.aboutUs-section h2.h2-aboutUs {
+    font-size: 27px;
+}
+
+section.aboutUs-section p.p-aboutUs {
+    font-size: 17px;
+}
+
+div.img-container_saludables-agua-alimentos {
+    display: inline-flex;
+}
+
+div.img-container_saludables-agua-alimentos img.saludables-agua-alimentos {
+    width: 200px;
+}
+
+img.water-production {
+    width: 350px;
+}
+
+img.vision {
+    width: 300px;
+}

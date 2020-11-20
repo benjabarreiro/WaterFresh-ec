@@ -1,0 +1,7 @@
+section.distributor-content {
+    width: 85%;
+    position: relative;
+    left: 15%;
+    background-image: url('../../images/fondo2.jpg');
+    background-size: cover;
+}

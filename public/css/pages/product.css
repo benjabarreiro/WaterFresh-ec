@@ -1,0 +1,16 @@
+section.products_section {
+    width: 85%;
+    position: relative;
+    left: 15%;
+    background-image: url('../../images/fondo7.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+div.img-container_product1 {
+    display: inline-flex;
+}
+
+div.img-container_product1 img {
+    width: 370px;
+}

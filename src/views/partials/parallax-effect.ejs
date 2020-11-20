@@ -1,0 +1,36 @@
+<section class="zoom">
+    <img src="images2/mountain1.png" id="layer1" alt="">
+    <img src="images2/mountain2.png" id="layer2" alt="">
+    <img src="images2/text.png" id="text" alt="">
+</section>
+<section class="content">
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, nobis quibusdam cumque soluta ipsum sapiente enim dolor libero similique rem excepturi corrupti consequatur ullam dignissimos impedit animi sit obcaecati accusamus est ea iste veniam in quisquam consectetur. Iure veritatis eaque velit asperiores inventore. Sed magnam cumque voluptatibus itaque fugit voluptas nemo distinctio facilis recusandae laudantium animi soluta impedit officia doloremque, quas amet veniam atque deserunt harum eius. Deserunt officia molestiae dolor facilis eveniet delectus? Autem voluptate expedita nobis animi, assumenda tempora harum optio consequatur tempore consequuntur saepe ut pariatur eos illum laudantium, dolor mollitia sit doloremque distinctio fugiat commodi dolorem quibusdam nesciunt quidem! Dolore inventore temporibus sint ipsam non natus officiis expedita culpa repellat nihil optio, placeat nisi ipsum eius adipisci. Quis asperiores quaerat expedita aperiam placeat tenetur iure. Reprehenderit dignissimos dolores corporis vero illo enim, illum necessitatibus ipsum fugit inventore, fuga eius voluptatem. Reiciendis architecto, illum officiis alias fugit blanditiis modi natus dolore. Aliquam autem odio possimus iure, magni aperiam nihil! Maxime repudiandae eveniet ex, ad quis ipsum incidunt dolor atque, et assumenda repellendus odio, doloremque vitae! Eveniet quas illum fugit magnam enim labore nihil, a, quod veniam reprehenderit dolore tempora earum nisi omnis sit porro. Voluptate, culpa laborum.</p>
+</section>
+<script type="text/javascript">
+    var layer1 = document.getElementById('layer1');
+    scroll = window.pageYOffset;
+    document.addEventListener('scroll', function(e) {
+        var offset = window.pageYOffset;
+        scroll = offset;
+        layer1.style.width = (100 + scroll/5) + '%';
+    });
+
+    var layer2 = document.getElementById('layer2');
+    scroll = window.pageYOffset;
+    document.addEventListener('scroll', function(e) {
+        var offset = window.pageYOffset;
+        scroll = offset;
+        layer2.style.width = (100 + scroll/5) + '%';
+        layer2.style.left = scroll/50 + '%';
+    });
+
+    var text = document.getElementById('text');
+    scroll = window.pageYOffset;
+    document.addEventListener('scroll', function(e) {
+        var offset = window.pageYOffset;
+        scroll = offset;
+        layer2.style.width = (100 + scroll/5) + '%';
+        text.style.top = - scroll/20 + '%';
+    });
+</script>
