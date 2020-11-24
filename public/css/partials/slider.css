@@ -1,8 +1,10 @@
 .titulo {
     font-size: 40px;
     font-family: 'Dancing Script', cursive;
-    margin-bottom: 40px;
-    color: #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: black;
+    -webkit-text-stroke: 0.5px white
 }
 
 .subtitulo {
@@ -33,7 +35,7 @@
 /*    Materialize Styles     */
 
 .carousel {
-    min-height: 500px;
+    min-height: 400px;
 }
 
 .carousel .carousel-item {
@@ -42,8 +44,8 @@
     justify-content: center;
     align-items: center;
     user-select: none;
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
 }
 
 .carousel .carousel-item img {

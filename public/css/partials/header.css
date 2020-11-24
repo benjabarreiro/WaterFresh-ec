@@ -30,6 +30,10 @@ aside.menu div.menu-container a.menu-container_items {
     color: #004c99;
 }
 
+aside.menu div.menu-container a.menu-container_items:last-child {
+    margin-bottom: 0px;
+}
+
 aside.menu div.social-media_container {
     text-align: center;
 }
