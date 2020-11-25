@@ -2,6 +2,12 @@ section.distributor-content {
     width: 85%;
     position: relative;
     left: 15%;
-    background-image: url('../../images/fondo2.jpg');
+    /*background-image: url('../../images/fondo5.webp');*/
     background-size: cover;
+}
+
+section.distributor-content img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
 }
