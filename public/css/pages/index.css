@@ -2,20 +2,20 @@ section.products_section {
     width: 85%;
     position: relative;
     left: 15%;
-    /* background-image: url('../../images/montaña-nevada1.webp'); */
+     background-image: url('../../images/montaña-nevada1.webp'); 
     /* background-image: url('../../images/montaña-nevada2.jpg'); */
     /* background-image: url('../../images/montaña-nevada3.jpg'); */
-    background-image: url('../../images/montaña-nevada4.jpg');
+    /* background-image: url('../../images/montaña-nevada4.jpg'); */
     background-size: 100% 100%;
     background-attachment: fixed;
 }
 
 div.col-4 {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 div.col-3 {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 div.col-4 div.img-container_product1 {
@@ -26,6 +26,7 @@ div.col-4 div.img-container_product1 {
 div.col-3 div.img-container_product1 {
     display: inline-flex;
     min-height: 191.25px;
+    margin-bottom: 15px;
 }
 
 div.col-4 div.img-container_product1 img {
@@ -38,36 +39,48 @@ div.col-3 div.img-container_product1 img {
     height: 191.25px;
 }
 
+div.product-info {
+    background-color: white;
+}
+
 div.col-4 h2.h2-top {
     font-size: 25px;
     font-weight: 700;
     color: black;
     -webkit-text-stroke: 0.5px white;
-    text-align: center;
+    display: inline;
 }
 
 div.col-3 h2.h2-top {
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    -webkit-text-stroke: 0.5px white;
+    display: inline;
+}
+
+div.col-4 div.priceAndButton {
+    margin-top: 15px;
+}
+
+div.col-3 div.priceAndButton {
+    margin-top: 15px;
+}
+
+div.col-4 h2.h2-bottom {
     font-size: 25px;
     font-weight: 700;
     color: black;
     -webkit-text-stroke: 0.5px white;
-    text-align: center;
+    display: inline;
 }
 
-div.col-4 p.p-top {
-    font-size: 15px;
-    font-weight: 600;
+div.col-3 h2.h2-bottom {
+    font-size: 25px;
+    font-weight: 700;
     color: black;
     -webkit-text-stroke: 0.5px white;
-    text-align: justify;
-}
-
-div.col-3 p.p-top {
-    font-size: 15px;
-    font-weight: 600;
-    color: black;
-    -webkit-text-stroke: 0.5px white;
-    text-align: justify;
+    display: inline;
 }
 
 div.col-4 div.button-container i.icon-top {
@@ -82,10 +95,16 @@ div.col-3 div.button-container i.icon-top {
 
 div.col-4 div.button-container {
     text-align: right;
+    display: inline;
+    position: relative;
+    left: 210px;
 }
 
 div.col-3 div.button-container {
     text-align: right;
+    display: inline;
+    position: relative;
+    left: 80px;
 }
 
 div.col-4 i {

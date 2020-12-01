@@ -26,4 +26,4 @@ const mainRouter = require('./routes/routes');
 // Routes Usage
 app.use('/', mainRouter);
 
-app.listen(3001, () => console.log('Server running in port 3000'));
+app.listen(3000, () => console.log('Server running in port 3000'));
