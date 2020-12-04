@@ -9,8 +9,7 @@ section.form-section {
 
 section.form-section div.form-container_2 {
     margin: 0 auto;
-    width: 650px;
-    background-color: #004c99;
+    width: 500px;
     align-content: center;
     border-radius: 5px;
 }
@@ -30,14 +29,15 @@ section.form-section div.form-container_2 form h1 {
 
 section.form-section div.form-container_2 form label {
     display: block;
-    font-size: 1.6rem;
+    font-size: 2.6rem;
+    color: white;
     margin: 10px 0;
 }
 
 section.form-section div.form-container_2 form input {
     display: block;
-    width: 96%;
-    height: 45px;
+    width: 100%;
+    height: 35px;
     margin-bottom: 15px;
     font-size: 20px;
     border-radius: 8px;
@@ -46,18 +46,20 @@ section.form-section div.form-container_2 form input {
     background-color: white;
 }
 
-section.form-section div.form-container_2 form div.button-form-container button {
-    float: right;
+::-webkit-input-placeholder { color: black; } 
+
+section.form-section div.form-container_2 form div.button-form-container {
+    position: relative;
+    left: 285px;
 }
 
 section.form-section div.form-container_2 form div.button-form-container button {
-    position: relative;
-    display: block;
+    align-content: flex-end;
     font-size: 1.6rem;
-    background-color: #2568AC;
+    background-color: transparent;
     color: white;
     border-radius: 5px;
-    border: none;
+    border: 2px solid;
     margin: 1.5rem 1rem;
     padding: 1rem 5rem;
     cursor: pointer;

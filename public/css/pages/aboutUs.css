@@ -1,14 +1,16 @@
 section.aboutUs-section {
-    height: 100%;
     width: 85%;
-    float: right;
-    background-image: url('../../images/fondo2.jpg');
-    background-size: cover;
+    position: relative;
+    left: 15%;
+    /*background-image: url('../../images/montaña-nevada4.jpg');*/
+    background-image: url('../../images/fondo4.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
 section.aboutUs-section h2, p {
     display: inline-flex;
-    color: white;
+    color: black;
 }
 
 section.aboutUs-section h2.h2-aboutUs {

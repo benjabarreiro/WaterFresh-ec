@@ -2,10 +2,7 @@ section.products_section {
     width: 85%;
     position: relative;
     left: 15%;
-     background-image: url('../../images/montaña-nevada1.webp'); 
-    /* background-image: url('../../images/montaña-nevada2.jpg'); */
-    /* background-image: url('../../images/montaña-nevada3.jpg'); */
-    /* background-image: url('../../images/montaña-nevada4.jpg'); */
+    background-image: url('../../images/montaña-nevada1.webp');
     background-size: 100% 100%;
     background-attachment: fixed;
 }

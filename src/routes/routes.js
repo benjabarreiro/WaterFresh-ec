@@ -28,7 +28,7 @@ router.get('/logIn', function(req, res){
 });
 
 router.get('/signIn', function(req, res){
-    res.render('signIn.ejs');
+    res.render('signUp.ejs');
 });
 
 module.exports = router;
