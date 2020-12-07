@@ -2,37 +2,25 @@ section.aboutUs-section {
     width: 85%;
     position: relative;
     left: 15%;
-    /*background-image: url('../../images/montaña-nevada4.jpg');*/
     background-image: url('../../images/fondo4.jpg');
     background-size: 100% 100%;
-    background-attachment: fixed;
+    background-attachment: fixed;;
 }
 
-section.aboutUs-section h2, p {
+section.aboutUs-section h2.h2-aboutUs, p.p-aboutUs {
     display: inline-flex;
-    color: black;
+    color: white;
 }
 
 section.aboutUs-section h2.h2-aboutUs {
-    font-size: 27px;
+    font-size: 50px;
 }
 
 section.aboutUs-section p.p-aboutUs {
-    font-size: 17px;
+    font-size: 23px;
 }
 
-div.img-container_saludables-agua-alimentos {
-    display: inline-flex;
-}
-
-div.img-container_saludables-agua-alimentos img.saludables-agua-alimentos {
-    width: 200px;
-}
-
-img.water-production {
-    width: 350px;
-}
-
-img.vision {
-    width: 300px;
+div.info1, div.info2, div.info3 {
+    margin-bottom: 100px;
+    text-align: center;
 }

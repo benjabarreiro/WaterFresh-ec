@@ -27,7 +27,7 @@ router.get('/logIn', function(req, res){
     res.render('logIn.ejs');
 });
 
-router.get('/signIn', function(req, res){
+router.get('/signUp', function(req, res){
     res.render('signUp.ejs');
 });
 
