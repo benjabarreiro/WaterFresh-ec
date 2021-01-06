@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "first_name": "Benjamín",
+        "last_name": "Barreiro",
+        "user_name": "benjabarreiro",
+        "email": "barreirobenjamin@gmail.com",
+        "password": "12345678",
+        "adress": "lorem 24",
+        "phone": "1135693617"
+    }
+]

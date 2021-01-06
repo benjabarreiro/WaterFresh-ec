@@ -34,6 +34,9 @@ module.exports = {
         type:Sequelize.DataTypes.STRING(500),
         defaultValue: 'Unspecified'
       },
+      phone: {
+        type: dataTypes.STRING
+      },
       createdAt: Sequelize.DataTypes.DATE,
       updatedAt: Sequelize.DataTypes.DATE
     })

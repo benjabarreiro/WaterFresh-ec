@@ -24,8 +24,16 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false,
             unique: true
         },
+        password: {
+            type:dataTypes.STRING(500),
+            allowNull: false
+        },
+        address: {
+            type:dataTypes.STRING(500),
+            defaultValue: 'Unspecified'
+        },
         phone: {
-            type: dataTypes.STRING,
+            type: dataTypes.STRING
         }
     };
     let config = {

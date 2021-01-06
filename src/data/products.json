@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Agua Ideal Botellón",
+        "price": 5,
+        "stock": 0
+    },
+    {
+        "id": 2,
+        "title": "Botellón con Grifo",
+        "price": 8,
+        "stock": 0
+    },
+    {
+        "id": 3,
+        "title": "Agua Ideal Personal",
+        "price": 1.25,
+        "stock": 0
+    },
+    {
+        "id": 4,
+        "title": "Pulpa Natural de Arazá",
+        "price": 1.25,
+        "stock": 0
+    },
+    {
+        "id": 5,
+        "title": "Pulpa Natural de Tomate",
+        "price": 1.25,
+        "stock": 0
+    },
+    {
+        "id": 6,
+        "title": "Pulpa Natural de Mora",
+        "price": 1.25,
+        "stock": 0
+    },
+    {
+        "id": 7,
+        "title": "Pulpa Natural de Limón Real",
+        "price": 1.25,
+        "stock": 0
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "first_name": "Pedro",
+        "last_name": "Rodriguez",
+        "username": "pedrorodriguez",
+        "email": "pedrorodriguez@gmail.com",
+        "password": "12345678",
+        "address": "lorem 500",
+        "phone": "1135693617"
+    }
+]

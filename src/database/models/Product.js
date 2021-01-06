@@ -1,5 +1,5 @@
 module.exports = (sequelize, dataTypes) => {
-    let alias = "Product";
+    let alias = "Products";
     let cols = {
         id: {
             type: dataTypes.INTEGER(100).UNSIGNED,
@@ -13,17 +13,51 @@ module.exports = (sequelize, dataTypes) => {
         price: {
             type: dataTypes.DECIMAL(50, 2),
             allowNull: false
+        },
+        stock: {
+            type: dataTypes.INTEGER(100),
+            allowNull: true
         }
     };
     let config = {
         tableName: 'products',
         timestamps: true,
-        // createdAt: 'created_at',
-        // updatedAt: 'updated_at',
+        createdAt: 'created_at',
+        updatedAt: 'updated_at',
         underscored: true
     };
 
     const Product = sequelize.define(alias, cols, config);
+
+    Product.associate = function(models) {
+
+      Product.belongsToMany(models.Users, {
+          as: 'user_shopping_cart',
+          through: 'products_users',
+          foreignKey: 'id_product',
+          otherKey: 'id_user',
+          timestamps: true
+        });
+
+        Product.belongsToMany(models.Transactions, {
+          as: 'transactions',
+          through: 'products_transactions',
+          foreignKey: 'id_product',
+          otherKey: 'id_transaction',
+          timestamps: true
+        });
+
+        Product.hasMany(models.Images, {
+          as: 'images',
+          foreignKey: 'id_product'
+        });
+
+        Product.hasMany(models.Discounts, {
+          as: 'discounts',
+          foreignKey: 'id_product'
+        });
+
+    }
 
     return Product;
 }
