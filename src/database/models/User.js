@@ -24,11 +24,11 @@ module.exports = (sequelize, dataTypes) => {
             unique: true
         },
         password: {
-            type:Sequelize.DataTypes.STRING(500),
+            type:Sequelize.dataTypes.STRING(500),
             allowNull: false
         },
         address: {
-            type:Sequelize.DataTypes.STRING(500),
+            type:Sequelize.dataTypes.STRING(500),
             defaultValue: 'Unspecified'
         },
         phone: {
