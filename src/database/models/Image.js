@@ -3,7 +3,7 @@ module.exports = (sequelize, dataTypes) => {
 
     let cols = {
         id: {
-            type: dataTypes.INTEGER(10).UNSIGNED,
+            type: dataTypes.INTEGER(100).UNSIGNED,
             primaryKey: true,
             autoIncrement: true
         },
@@ -19,7 +19,7 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING(100),
             allowNull: false,
         },
-        url: {
+        img_url: {
             type: dataTypes.STRING(500),
         }
         

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Crear producto</h1>
+    <form action="/products/create" method="POST">
+        <div>
+            <label for="">
+                Nombre del producto
+            </label>
+            <input type="text" name="title">
+        </div>
+        <div>
+            <label for="">
+                Precio del producto
+            </label>
+            <input type="number" name="price">
+        </div>
+        <div>
+            <label for="">
+                Stock del producto
+            </label>
+            <input type="number" name="stock">
+        </div>
+        <button type="submit">
+            Crear
+        </button>
+    </form>
+</body>
+</html>

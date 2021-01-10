@@ -17,6 +17,10 @@ module.exports = (sequelize, dataTypes) => {
         stock: {
             type: dataTypes.INTEGER(100),
             allowNull: true
+        },
+        img_url: {
+          type: dataTypes.STRING(500),
+          allowNull: true
         }
     };
     let config = {

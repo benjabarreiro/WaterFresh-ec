@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><%= product.title %> </h1>
+    <img src="<%= product.img_url %> " alt="">
+    <p>Precio: <%= product.price %> </p>
+    <p>Stock: <%= product.stock %> </p>
+    <button>Comprar</button>
+    <button>Agregar al carrito</button>
+    <a href="/products/detail/edit/<%= product.id %> ">
+        <button type="submit">Editar</button>
+    </a>
+    <form action="/products/detail/delete/<%= product.id %> " method="POST">
+        <button type="submit">
+            Borrar Producto
+        </button>
+    </form>
+</body>
+</html>
