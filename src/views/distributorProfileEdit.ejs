@@ -6,54 +6,54 @@
     <section class="distributor-content">
         <div class="form-container_2">
             <h1>Conviertete en distribuidor</h1>
-            <form action="/distributors" method="POST">
+            <form action="/distributors/profile/edit/<%= distributor.id %> " method="POST">
                 <div>
                     <label for="">
                         Nombre
                     </label>
-                    <input name="first_name" type="text" placeholder="Introduzca su nombre...">
+                    <input name="first_name" type="text" value="<%= distributor.first_name %> ">
                 </div>
                 <div>
                     <label for="">
                         Apellido
                     </label>
-                    <input name="last_name" type="text" placeholder="Introduzca su apellido...">
+                    <input name="last_name" type="text" value="<%= distributor.last_name %> ">
                 </div>
                 <div>
                     <label for="">
                         Nombre de usuario
                     </label>
-                    <input name="username" type="text" placeholder="Introduzca un nombre de usuario...">
+                    <input name="username" type="text" value="<%= distributor.username %> ">
                 </div>
                 <div>
                     <label for="">
                         Email
                     </label>
-                    <input type="email" name="email" placeholder="Introduzca su email...">
+                    <input type="email" name="email" value="<%= distributor.email %> ">
                 </div>
                 <div>
                     <label for="">
                         Contraseña
                     </label>
-                    <input type="password" name="password" placeholder="Introduzca una contraseña...">
+                    <input type="password" name="password" value="<%= distributor.password %> ">
                 </div>
                 <div>
                     <label for="">
                         Repita la contraseña
                     </label>
-                    <input type="password" name="repassword" placeholder="Repita la contraseña...">
+                    <input type="password" name="repassword" value="<%= distributor.repassword %> ">
                 </div>
                 <div>
                     <label for="">
                         Dirección
                     </label>
-                    <input type="text" name="address" placeholder="Introduzca su dirección...">
+                    <input type="text" name="address" value="<%= distributor.address %> ">
                 </div>
                 <div>
                     <label for="">
                         Número de teléfono
                     </label>
-                    <input name="phone" type="text" placeholder="Introduzca su número de teléfono...">
+                    <input name="phone" type="text" value="<%= distributor.phone %> ">
                 </div>
                 <div class="button-form-container">
                     <button type="submit">Enviar</button>

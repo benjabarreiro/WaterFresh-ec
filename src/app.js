@@ -27,11 +27,13 @@ app.set('views', path.join(__dirname, 'views'));
 const mainRouter = require('./routes/routes');
 const productsRouter = require('./routes/products');
 const usersRouter = require('./routes/users');
+const distributorsRouter = require('./routes/distributors');
 
 
 // Routes Usage
 app.use('/', productsRouter);
 app.use('/users', usersRouter);
+app.use('/distributors', distributorsRouter);
 //app.use('/', mainRouter);
 
 app.listen(3000, () => console.log('Server running in port 3000'));
