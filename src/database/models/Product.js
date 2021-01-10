@@ -21,10 +21,10 @@ module.exports = (sequelize, dataTypes) => {
     };
     let config = {
         tableName: 'products',
-        timestamps: true,
-        createdAt: 'created_at',
-        updatedAt: 'updated_at',
-        underscored: true
+        //timestamps: true,
+        //createdAt: 'createdAt',
+        //updatedAt: 'updatedAt',
+        //underscored: true
     };
 
     const Product = sequelize.define(alias, cols, config);
@@ -49,7 +49,7 @@ module.exports = (sequelize, dataTypes) => {
 
         Product.hasMany(models.Images, {
           as: 'images',
-          foreignKey: 'id_product'
+          foreignKey: 'product_id'
         });
 
         Product.hasMany(models.Discounts, {

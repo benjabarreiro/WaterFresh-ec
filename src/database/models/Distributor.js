@@ -7,20 +7,20 @@ module.exports = (sequelize, dataTypes) => {
             autoIncrement: true
         },
         first_name: {
-            type: Sequelize.dataTypes.STRING(60),
+            type: dataTypes.STRING(60),
             allowNull: false
         },
         last_name: {
-            type: Sequelize.dataTypes.STRING(60),
+            type: dataTypes.STRING(60),
             allowNull: false
         },
         username: {
-            type: Sequelize.dataTypes.STRING(25),
+            type: dataTypes.STRING(25),
             allowNull: false,
             unique: true
         },
         email: {
-            type: Sequelize.dataTypes.STRING(500),
+            type: dataTypes.STRING(500),
             allowNull: false,
             unique: true
         },
@@ -47,4 +47,4 @@ module.exports = (sequelize, dataTypes) => {
     const Distributor = sequelize.define(alias, cols, config);
 
     return Distributor;
-}
+};

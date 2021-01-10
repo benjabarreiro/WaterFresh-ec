@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><%= user.first_name %> </h1>
+    <h1><%= user.last_name %> </h1>
+    <h1><%= user.username %> </h1>
+    <h1><%= user.email %> </h1>
+    <h1><%= user.password %> </h1>
+    <h1><%= user.repassword %> </h1>
+    <h1><%= user.address %> </h1>
+    <h1><%= user.phone %> </h1>
+    <h1><%= user.id %> </h1>
+    
+    <a href="/users/profile/edit/<%= user.id %>  ">
+        <button>Editar perfil</button>
+    </a>
+    <form action="/users/profile/delete/<%= user.id %>" method="POST">
+        <button type="submit">Borrar cuenta</button>
+    </form>
+</body>
+</html>

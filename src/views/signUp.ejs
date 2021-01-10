@@ -2,23 +2,73 @@
 <html lang="en">
 <%- include('partials/head.ejs') %> 
 <body>
+
     <%- include('partials/header.ejs') %>
+
     <section class="form-section">
+
         <div class="form-container_2">
-            <form action="">
-                <h1>Registrate</h1>
-                <label for="">Nombre</label>
-                <input type="text" placeholder="Introduzca su nombre...">
-                <label for="">Apellido</label>
-                <input type="text" placeholder="Introduzca su apellido...">
-                <label for="">Número de teléfono</label>
-                <input type="text" placeholder="Introduzca su número de teléfono...">
-                <label for="">Email</label>
-                <input type="email" name="" id="" placeholder="Introduzca su email...">
-                <label for="">Contraseña</label>
-                <input type="password" name="" id="" placeholder="Introduzca su contraseña...">
-                <label for="">Repita la contraseña</label>
-                <input type="password" placeholder="Repita su contraseña...">
+
+            <h1>Registrate</h1>
+
+            <form action="/users/registration" method="POST">
+                
+                <div>
+                    <label for="">
+                        Nombre
+                    </label>
+                    <input name="first_name" type="text" placeholder="Introduzca su nombre...">
+                </div>
+
+                <div>
+                    <label for="">
+                        Apellido
+                    </label>
+                    <input name="last_name" type="text" placeholder="Introduzca su apellido...">
+                </div>
+
+                <div>
+                    <label for="">
+                        Nombre de usuario
+                    </label>
+                    <input name="username" type="text" placeholder="Introduzca su nombre de usuario...">
+                </div>
+
+                <div>
+                    <label for="">
+                        Email
+                    </label>
+                    <input name="email" type="email" placeholder="Introduzca su email...">
+                </div>
+
+                <div>
+                    <label for="">
+                        Contraseña
+                    </label>
+                    <input name="password" type="password" placeholder="Introduzca su contraseña...">
+                </div>
+
+                <div>
+                    <label for="">
+                        Repita la contraseña
+                    </label>
+                    <input name="repassword" type="password" placeholder="Repita su contraseña...">
+                </div>
+
+                <div>
+                    <label for="">
+                        Dirección
+                    </label>
+                    <input name="address" type="text" placeholder="Introduzca su dirección...">
+                </div>
+                
+                <div>
+                    <label for="">
+                        Número de teléfono
+                    </label>
+                    <input name="phone" type="text" placeholder="Introduzca su número de teléfono...">
+                </div>
+
                 <div class="button-form-container">
                     <button type="submit">Registrarse</button>
                 </div>

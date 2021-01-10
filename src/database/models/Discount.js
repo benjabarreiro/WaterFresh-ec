@@ -7,7 +7,7 @@ module.exports = (sequelize, dataTypes) => {
             primaryKey: true,
             autoIncrement: true
         },
-        id_game: {
+        product_id: {
             type: dataTypes.INTEGER(100).UNSIGNED,
             allowNull: false,
             references: {

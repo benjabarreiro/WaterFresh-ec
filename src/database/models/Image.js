@@ -7,7 +7,7 @@ module.exports = (sequelize, dataTypes) => {
             primaryKey: true,
             autoIncrement: true
         },
-        id_product: {
+        product_id: {
             type: dataTypes.INTEGER(100).UNSIGNED,
             allowNull: false,
             references: {
@@ -19,7 +19,7 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING(100),
             allowNull: false,
         },
-        img_url: {
+        url: {
             type: dataTypes.STRING(500),
         }
         
@@ -35,7 +35,7 @@ module.exports = (sequelize, dataTypes) => {
 
         Image.belongsTo(models.Products, {
             as: 'products',
-            foreignKey: 'id_product'
+            foreignKey: 'product_id'
         })
 
     }

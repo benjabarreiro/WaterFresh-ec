@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <%- include('partials/head.ejs') %>
+
+</head>
+
+<body>
+  <h1>Editar cuenta</h1>
+
+  <form action="/users/profile/edit/<%= user.id %>  " method="POST">
+    <div>
+      <label for="">
+        Nombre
+      </label>
+      <input type="text" name="first_name" value=" <%= user.first_name %> ">
+    </div>
+    <div>
+      <label for="">
+        Apellido
+      </label>
+      <input type="text" name="last_name" value=" <%= user.last_name %> ">
+    </div>
+    <div>
+      <label for="">
+        Nombre de usuario
+      </label>
+      <input type="text" name="username" value=" <%= user.username %> ">
+    </div>
+    <div>
+      <label for="">
+        Email
+      </label>
+      <input type="email" name="email" value=" <%= user.email %> ">
+    </div>
+    <div>
+      <label for="">
+        Contraseña
+      </label>
+      <input type="password" name="password" value=" <%= user.password %> ">
+    </div>
+    <div>
+      <label for="">
+        Repita contraseña
+      </label>
+      <input type="password" name="repassword" value=" <%= user.repassword %> ">
+    </div>
+    <div>
+      <label for="">
+        Dirección
+      </label>
+      <input type="text" name="address" value=" <%= user.address %> ">
+    </div>
+    <div>
+      <label for="">
+        Teléfono
+      </label>
+      <input type="text" name="phone" value=" <%= user.phone %> ">
+    </div>
+    <button type="submit">Editar</button>
+  </form>
+</body>
+</html>

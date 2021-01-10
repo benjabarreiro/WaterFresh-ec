@@ -7,7 +7,7 @@ module.exports = (sequelize, dataTypes) => {
             primaryKey: true,
             autoIncrement: true
         },
-        id_user: {
+        user_id: {
             type: dataTypes.INTEGER(100),
             allowNull: false
         },
@@ -43,8 +43,8 @@ module.exports = (sequelize, dataTypes) => {
     Transaction.belongsToMany(models.Products, {
       as: 'transactions_products',
       through: 'products_transactions',
-      foreignKey: 'id_transaction',
-      otherKey: 'id_product',
+      foreignKey: 'transaction_id',
+      otherKey: 'product_id',
       timestamps: true
     });
     
