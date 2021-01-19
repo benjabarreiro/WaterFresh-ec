@@ -23,10 +23,6 @@ router.get('/distributor', function(req, res){
 
 //signIn logIn
 
-router.get('/logIn', function(req, res){
-    res.render('logIn.ejs');
-});
-
 router.get('/signUp', function(req, res){
     res.render('signUp.ejs');
 });

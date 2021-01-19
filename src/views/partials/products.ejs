@@ -4,132 +4,25 @@
 
           <div class="row">
 
-            <% for(let i=0; i<=0; i++) { %> 
+            <% for(let i=0; i<products.length; i++) { %> 
 
                 <div class="col-3">
                   <div class="img-container_product1">
-                      <img src="img-db/aguaIdealBotellon.jpg" alt="">
+                      <img src="<%= products[i].img_url %> " alt="">
                   </div>
                   <div class="product-info">
-                      <h2 class="h2-top"><%= products[0].title %> </h2><br>
+                      <h2 class="h2-top"><%= products[i].title %> </h2><br>
                       <div class="priceAndButton">
-                          <h2 class="h2-bottom">$<%= products[0].price %> | Stock: <%= products[0].stock %></h2>
+                          <h2 class="h2-bottom">$<%= products[i].price %> | Stock: <%= products[i].stock %></h2>
                           <div class="button-container">
                             <i class="fas fa-cart-plus icon-top"></i>
                             <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
                               COMPRAR
                             </button>
+                            <a href="/products/detail/<%= products[i].id %> ">Ver más</a>
                           </div>
                       </div>
                   </div>
-                </div>
-
-                <div class="col-3">
-                  <div class="img-container_product1">
-                      <img src="img-db/botellonConGrifo.jpg" alt="">
-                  </div>
-                  <div class="product-info">
-                    <h2 class="h2-top"><%= products[1].title %> </h2><br>
-                    <div class="priceAndButton">
-                        <h2 class="h2-bottom">$<%= products[1].price %> | Stock: <%= products[1].stock %></h2>
-                        <div class="button-container">
-                              <i class="fas fa-cart-plus icon-top"></i>
-                              <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
-                                COMPRAR
-                              </button>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="img-container_product1">
-                        <img src="img-db/aguaIdealPersonal.jpg" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="h2-top"><%= products[2].title %> </h2><br>
-                        <div class="priceAndButton">
-                            <h2 class="h2-bottom">$<%= products[2].price %> | Stock: <%= products[2].stock %></h2>
-                            <div class="button-container">
-                                <i class="fas fa-cart-plus icon-top"></i>
-                                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
-                                  COMPRAR
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="img-container_product1">
-                        <img src="img-db/pulpaNaturalDeAraza.png" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="h2-top"><%= products[3].title %> </h2><br>
-                        <div class="priceAndButton">
-                            <h2 class="h2-bottom">$<%= products[3].price %> | Stock: <%= products[3].stock %></h2>
-                            <div class="button-container">
-                                  <i class="fas fa-cart-plus icon-top"></i>
-                                  <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
-                                    COMPRAR
-                                  </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="img-container_product1">
-                        <img src="img-db/pulpaNaturalDeTomate.png" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="h2-top"><%= products[4].title %> </h2><br>
-                        <div class="priceAndButton">
-                            <h2 class="h2-bottom">$<%= products[4].price %> | Stock: <%= products[4].stock %></h2>
-                            <div class="button-container">
-                                <i class="fas fa-cart-plus icon-top"></i>
-                                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
-                                  COMPRAR
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="img-container_product1">
-                        <img src="img-db/pulpaNaturalDeMora.jpg" alt="">
-                    </div>
-                    <div class="product-info">
-                        <h2 class="h2-top"><%= products[5].title %> </h2><br>
-                        <div class="priceAndButton">
-                            <h2 class="h2-bottom">$<%= products[5].price %> | Stock: <%= products[5].stock %></h2>
-                            <div class="button-container">
-                                <i class="fas fa-cart-plus icon-top"></i>
-                                <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
-                                  COMPRAR
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-3">
-                    <div class="img-container_product1">
-                        <img src="img-db/pulpaNaturalDeLimonReal.jpg" alt="">
-                    </div>
-                    <div class="product-info">
-                      <h2 class="h2-top"><%= products[6].title %> </h2><br>
-                      <div class="priceAndButton">
-                        <h2 class="h2-bottom">$<%= products[6].price %> | Stock: <%= products[6].stock %> </h2>
-                        <div class="button-container">
-                            <i class="fas fa-cart-plus icon-top"></i>
-                            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
-                              COMPRAR
-                            </button>
-                        </div>
-                      </div>
-                    </div>
                 </div>
 
               <% } %> 

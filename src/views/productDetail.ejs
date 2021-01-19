@@ -15,7 +15,7 @@
     <a href="/products/detail/edit/<%= product.id %> ">
         <button type="submit">Editar</button>
     </a>
-    <form action="/products/detail/delete/<%= product.id %> " method="POST">
+    <form action="/products/detail/delete/<%= product.id %>?_method=DELETE" method="POST">
         <button type="submit">
             Borrar Producto
         </button>

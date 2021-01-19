@@ -18,7 +18,7 @@
     <a href="/distributors/profile/edit/<%= distributor.id %> ">
         <button>Editar</button>
     </a>
-    <form action="/distributors/profile/delete/<%= distributor.id %> " method="POST">
+    <form action="/distributors/profile/delete/<%= distributor.id %>?_method=DELETE" method="POST">
         <button type="submit">Eliminar cuenta</button>
     </form>
 </body>

@@ -19,7 +19,7 @@ module.exports = {
         db.Products.findAll()
             .then(
                 function(products) {
-                    res.render("test.ejs", {
+                    res.render("index.ejs", {
                         products:products
                     })
                 })

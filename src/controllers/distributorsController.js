@@ -12,8 +12,8 @@ module.exports = {
             last_name: req.body.last_name,
             username: req.body.username,
             email: req.body.email,
-            password: req.body.password,
-            repassword: req.body.repassword,
+            password: bcrypt.hashSync(req.body.password, 10),
+            repassword: bcrypt.hashSync(req.body.repassword, 10),
             address: req.body.address,
             phone: req.body.phone
         });
@@ -44,8 +44,8 @@ module.exports = {
             last_name: req.body.last_name,
             username: req.body.username,
             email: req.body.email,
-            password: req.body.password,
-            repassword: req.body.repassword,
+            password: bcrypt.hashSync(req.body.password, 10),
+            repassword: bcrypt.hashSync(req.body.repassword, 10),
             address: req.body.address,
             phone: req.body.phone
         },

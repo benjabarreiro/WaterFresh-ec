@@ -16,9 +16,9 @@ router.get('/profile/:id', distributorsController.profile);
 // UPDATE
 router.get('/profile/edit/:id', distributorsController.edit);
 
-router.post('/profile/edit/:id', distributorsController.updated);
+router.put('/profile/edit/:id', distributorsController.updated);
 
 // DELETE
-router.post('/profile/delete/:id', distributorsController.delete);
+router.delete('/profile/delete/:id', distributorsController.delete);
 
 module.exports = router;

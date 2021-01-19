@@ -16,9 +16,9 @@ router.get('/products/detail/:id', productsController.detail);
 // UPDATE
 router.get('/products/detail/edit/:id', productsController.edit);
 
-router.post('/products/detail/edit/:id', productsController.updated);
+router.put('/products/detail/edit/:id', productsController.updated);
 
 // DELETE
-router.post('/products/detail/delete/:id', productsController.delete);
+router.delete('/products/detail/delete/:id', productsController.delete);
 
 module.exports = router;

@@ -19,7 +19,7 @@
     <a href="/users/profile/edit/<%= user.id %>  ">
         <button>Editar perfil</button>
     </a>
-    <form action="/users/profile/delete/<%= user.id %>" method="POST">
+    <form action="/users/profile/delete/<%= user.id %>?_method=DELETE" method="POST">
         <button type="submit">Borrar cuenta</button>
     </form>
 </body>

@@ -24,11 +24,11 @@ module.exports = (sequelize, dataTypes) => {
             unique: true
         },
         password: {
-            type: dataTypes.STRING(16),
+            type: dataTypes.STRING(100),
             allowNull: false
         },
         repassword: {
-            type: dataTypes.STRING(16),
+            type: dataTypes.STRING(100),
             allowNull: false
         },
         address: {

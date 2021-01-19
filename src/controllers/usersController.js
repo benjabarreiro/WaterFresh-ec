@@ -1,24 +1,64 @@
 const fs = require('fs');
 const path = require('path');
+const bcrypt = require('bcrypt');
 const db = require('../database/models');
+
+let {check, validationResult, body} = require('express-validator');
 
 module.exports = {
     signUpPage: function(req, res) {
         res.render('signUp');
     },
     newUser: function(req, res) {
-        db.Users.create({
-            first_name: req.body.first_name,
-            last_name: req.body.last_name,
-            username: req.body.username,
-            email: req.body.email,
-            password: req.body.password,
-            repassword: req.body.repassword,
-            address: req.body.address,
-            phone: req.body.phone
-        });
+        let errors = validationResult(req);
+        if(errors.isEmpty()) {
+            db.Users.create({
+                first_name: req.body.first_name,
+                last_name: req.body.last_name,
+                username: req.body.username,
+                email: req.body.email,
+                password: bcrypt.hashSync(req.body.password, 10),
+                repassword: bcrypt.hashSync(req.body.repassword, 10),
+                address: req.body.address,
+                phone: req.body.phone
+            })
+            .then(function() {
+                res.redirect('/users/login');
+            })
+        } else {
+            res.render('signUp.ejs', {errors: errors.errors});
+        }
+    },
+    logIn: function(req, res) {
+        res.render('logIn');
+    },
+    validationLogIn: function(req, res, next) {
+        let errors = validationResult(req);
 
-        res.redirect('/');
+        if(errors.isEmpty()) {
+            db.Users.findOne({
+                where: {
+                    email: req.body.email
+                }
+            })
+            .then(function(result) {
+                if(result.email == req.body.email && bcrypt.compareSync(req.body.password, result.password)) {
+                    req.session.emailUser = result.email;
+                    if(req.body.remember != undefined) {
+                        res.cookie('authRemember', result.email,
+                        {maxAge: 60000 * 10 * 5})
+                    }
+                    return res.redirect('/');
+                }
+                return res.render('login', {
+                    errors: [
+                        {msg: 'Credenciales inválidas'}
+                    ]
+                })
+            })
+        } else {
+            res.render('login.ejs', {errors: errors.errors});
+        }
     },
     list: function(req, res) {
         db.Users.findAll()
@@ -44,8 +84,8 @@ module.exports = {
             last_name: req.body.last_name,
             username: req.body.username,
             email: req.body.email,
-            password: req.body.password,
-            repassword: req.body.repassword,
+            password: bcrypt.hashSync(req.body.password, 10),
+            repassword: bcrypt.hashSync(req.body.repassword, 10),
             address: req.body.address,
             phone: req.body.phone
         },
