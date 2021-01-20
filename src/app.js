@@ -11,6 +11,7 @@ const methodOverride = require('method-override');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const authCookieMiddleware = require('./middlewares/authCookieMiddleware');
+const localsMiddleware = require('./middlewares/localsMiddleware');
 
 
 // Statics and Configs
@@ -27,6 +28,7 @@ app.use(methodOverride('_method'));
 app.use(session({secret: 'secret'}));
 app.use(cookieParser());
 app.use(authCookieMiddleware);
+app.use(localsMiddleware);
 
 
 // View Engine
@@ -47,6 +49,6 @@ app.use('/', productsRouter);
 app.use('/users', usersRouter);
 app.use('/distributors', distributorsRouter);
 app.use('/discounts', discountsRouter);
-//app.use('/', mainRouter);
+app.use('/', mainRouter);
 
 app.listen(3000, () => console.log('Server running in port 3000'));

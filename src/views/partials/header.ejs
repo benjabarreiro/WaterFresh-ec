@@ -1,11 +1,15 @@
 <aside class="menu">
     <div class="logo-container">
-        <a href="/"><img class="logo" src="images/logo3.svg" alt=""></a>
+        <a href="/"><img class="logo" src="/images/logo3.svg" alt=""></a>
     </div>
     <div class="menu-container">
-        <a class="menu-container_items" href="/distributor">Conviertete en Distribuidor</a>
+        <a class="menu-container_items" href="/distributors">Conviertete en Distribuidor</a>
         <a class="menu-container_items" href="/aboutUs">Sobre Nosotros</a>
-        <a class="menu-container_items" href="/logIn">Iniciá Sesión</a>
+        <% if(locals.localUser != undefined) { %> 
+        <a class="menu-container_items" href="/users/profile/<%= locals.localUser.id %> ">Perfil</a>
+        <% } else { %> 
+        <a class="menu-container_items" href="/users/logIn">Iniciá Sesión</a>
+        <% } %> 
         <a class="menu-container_items" href="/contact">Contacto</a>
     </div>
     <div class="social-media_container">

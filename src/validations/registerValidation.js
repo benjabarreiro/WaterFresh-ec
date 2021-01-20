@@ -36,7 +36,7 @@ module.exports = [
 
     body('email')
         .custom(async function(value) {
-            let usuario = await db.Users.findOne({where: {email: values}})
+            let usuario = await db.Users.findOne({where: {email: value}})
                 .then(function(elUsuario) {
                     if (elUsuario) {
                         return false;

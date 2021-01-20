@@ -30,7 +30,7 @@ module.exports = {
         }
     },
     logIn: function(req, res) {
-        res.render('logIn');
+        res.render('userLogin');
     },
     validationLogIn: function(req, res, next) {
         let errors = validationResult(req);
@@ -50,15 +50,20 @@ module.exports = {
                     }
                     return res.redirect('/');
                 }
-                return res.render('login', {
+                return res.render('userLogin', {
                     errors: [
                         {msg: 'Credenciales inválidas'}
                     ]
                 })
             })
         } else {
-            res.render('login.ejs', {errors: errors.errors});
+            res.render('userLogin.ejs', {errors: errors.errors});
         }
+    },
+    logout: function(req, res) {
+        req.session.destroy();
+        res.cookie('authRemember', ''.email, {maxAge: -1});
+        res.redirect('/');
     },
     list: function(req, res) {
         db.Users.findAll()
