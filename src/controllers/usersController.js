@@ -18,9 +18,7 @@ module.exports = {
                 username: req.body.username,
                 email: req.body.email,
                 password: bcrypt.hashSync(req.body.password, 10),
-                repassword: bcrypt.hashSync(req.body.repassword, 10),
-                address: req.body.address,
-                phone: req.body.phone
+                repassword: bcrypt.hashSync(req.body.repassword, 10)
             })
             .then(function() {
                 res.redirect('/users/login');
@@ -30,7 +28,7 @@ module.exports = {
         }
     },
     logIn: function(req, res) {
-        res.render('userLogin');
+        res.render('userLogIn');
     },
     validationLogIn: function(req, res, next) {
         let errors = validationResult(req);
@@ -50,26 +48,20 @@ module.exports = {
                     }
                     return res.redirect('/');
                 }
-                return res.render('userLogin', {
+                return res.render('userLogIn', {
                     errors: [
                         {msg: 'Credenciales inválidas'}
                     ]
                 })
             })
         } else {
-            res.render('userLogin.ejs', {errors: errors.errors});
+            res.render('userLogIn.ejs', {errors: errors.errors});
         }
     },
     logout: function(req, res) {
         req.session.destroy();
         res.cookie('authRemember', ''.email, {maxAge: -1});
         res.redirect('/');
-    },
-    list: function(req, res) {
-        db.Users.findAll()
-            .then(function(users) {
-                res.render('userList', {users:users});
-            })
     },
     profile: function(req, res) {
         db.Users.findByPk(req.params.id)

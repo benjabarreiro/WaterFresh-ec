@@ -1,0 +1,203 @@
+div.shoppingCart-container {
+    display: none;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 6px 0px 0px 6px;
+    z-index: 100;
+    animation: shoppingCartSlideIn .4s ease-in-out;
+    overflow-y: scroll;
+}
+
+@keyframes shoppingCartSlideIn {
+    0%{
+        transform: translateX(500px);
+        opacity: 0;
+    }
+    60%{
+        transform: translateX(0px);
+    }
+    62%{
+        transform: translateX(-30px);
+    }
+    70%{
+        opacity: 1;
+    }
+    80%{
+        transform: translate(0);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+
+div.xAndTitle {
+    margin: -5px 0px 15px -10px;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+div.xAndTitle span.hideShoppingCart {
+    display: inline-block;
+    padding: 2px 5px 5px 0;
+    margin-right: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+div.productCart-container {
+    padding: 0;
+}
+
+div.productCart {
+    margin-right: -5px;
+    margin-left: -5px;
+    margin-bottom: 20px;
+}
+
+div.productCart div.imgContainerCart {
+    padding-right: 1rem!important;
+    padding-left: 5px;
+}
+
+div.productCart div.imgContainerCart img.imgCart {
+    width: 100%;
+}
+
+div.productCart div.itemData {
+    padding-right: 5px;
+    padding-left: 5px;
+    align-items: center!important;
+    display: flex!important;
+}
+
+div.productCart div.itemData div.w-100 {
+    width: 100%!important;
+}
+
+div.productCart div.itemData div.w-100 h6.productName {
+    float: left;
+    width: 100%;
+    padding: 0 40px 10px 0;
+    font-weight: 400!important;
+    margin-bottom: 0!important;
+    margin-top: 0;
+    font-size: 14px;
+}
+
+div.productCart div.itemData div.w-100 div.cartQuantity-container {
+    width: 120px;
+    height: 42px;
+    float: left;
+    padding: 10px;
+    background-color: rgba(56, 61, 61, 0.03);
+    border-radius: 6px;
+    margin-bottom: .5rem!important;
+}
+
+div.productCart div.itemData div.w-100 div.cartQuantity-container div.cartQuantityChooseAlign {
+    margin: 0!important;
+    align-items: center!important;
+    display: flex;
+    flex-wrap: wrap;
+    height: 20px;
+}
+
+div.productCart div.itemData div.w-100 div.cartQuantity-container div.cartQuantityChooseAlign i.formQuantityIcon {
+    width: 14px;
+    line-height: 12px;
+    font-size: 15px;
+}
+
+div.productCart div.itemData div.w-100 div.cartQuantity-container div.cartQuantityChooseAlign div.quantityNumber {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    height: 20px;
+}
+
+div.productCart div.itemData div.w-100 div.cartQuantity-container div.cartQuantityChooseAlign div.quantityNumber input {
+    font-size: 14px;
+    padding: 0;
+    background-color: transparent;
+    border-bottom: 0;
+    width: 25%;
+    margin-left: 30px;
+    height: initial;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+div.productCart div.itemData div.w-100 h6.itemCartPrice {
+    float: right;
+    margin: 10px 0;
+    text-align: right;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+div.productCart div.trashIcon {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    text-align: right!important;
+    font-size: 20px;
+    color: #383d3d;
+}
+
+div.container {
+    padding: 0;
+}
+
+div.cartDivider {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid rgba(56, 61, 61, 0.1);
+}
+
+h2.totalNoDelivery {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #1c826d;
+}
+
+h2.totalNoDelivery span.span1 {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+
+div.buttonCart {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    font-size: 24px;
+}
+
+div.buttonCart a.hideShoppingCart {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-decoration: none;
+    color: #1c826d;
+    font-size: 18px;
+    position: relative;
+    top: 20px;
+}
+
+div.buttonCart button.startBuying {
+    border: 3px solid #1c826d;
+    border-radius: 6px;
+    color: #1c826d;
+    width: 200px;
+}

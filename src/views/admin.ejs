@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head.ejs') %> 
+<body>
+    <%- include('partials/header.ejs') %> 
+    <section class="admins_section">
+        <h1 class="admins-h1">Listado de productos:</h1>
+        <% for(let i=0; i<products.length; i++) { %>
+            <span class="admins-list"> <%= products[i].title %> </span><br>
+            <a class="admins-a" href="/admins/product/edit/<%= products[i].id %> ">Editar</a>
+            <form action="/admins/product/delete/<%= products[i].id %>?_method=DELETE" method="POST">
+                <button type="submit">Borrar Producto</button>
+            </form>
+        <% } %>
+        <a class="admins-a" href="/admins/distributorsList">Ver listado de distribuidores</a><br>
+        <a class="admins-a" href="/admins/usersList">Ver listado de usuarios</a><br>
+        <a class="admins-a" href="/admins/product/create">Crear Producto</a>
+    </section>
+</body>
+</html>

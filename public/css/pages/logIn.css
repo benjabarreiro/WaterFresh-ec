@@ -1,0 +1,814 @@
+section.form-section-logIn {
+    width: 85%;
+    height: 100%;
+    position: relative;
+    left: 15%;
+    background-color: #acbccc;
+}
+
+section.form-section-logIn div.container {
+    padding-top: 0%;
+}
+
+section.form-section-logIn div.container div.row {
+    padding-top: 0%;
+}
+
+section.form-section-logIn div.container div.row div.col-lg-8 div.img-container {
+    padding-top: 6%;
+    margin: 0%;
+    width: 100%;
+}
+
+section.form-section-logIn div.container div.row div.col-lg-8 div.img-container img {
+    max-width: 100%;
+}
+
+section.form-section-logIn div.container div.row div.col-lg-4 {
+    margin-top: 6%;
+    max-width: 100%;
+}
+
+section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 {
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 form {
+    align-self: center;
+    margin: 0 5.5%;
+    padding: 1.5%;
+}
+
+section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 form h1 {
+    padding-top: 3%;
+    font-size: 40px;
+    color: black;
+}
+
+section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 form label.info {
+    display: block;
+    font-size: 2.5rem;
+    color: black;
+    margin: 1.5% 0;
+}
+
+section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 form input.info {
+    display: block;
+    width: 90%;
+    height: 4rem;
+    margin-bottom: 3%;
+    margin-left: 4.5%;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    padding: 0 3%;
+    background-color: white;
+}
+
+section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 form div.remember {
+    display: inline;
+    margin-left: 25%;
+}
+
+section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 form div.remember label.remember {
+    font-size: 1.8rem;
+    color: black;
+    margin: 1.5% 1.5%;
+} 
+
+section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 form div.remember input.checkbox {
+    position: relative;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 8px;
+    margin: 1.5% 0px 1.5% 3%;
+    background-color: white;
+}
+
+::-webkit-input-placeholder { color: black; }
+
+section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 form div.button-form-container button {
+    font-size: 1.6rem;
+    background-color: transparent;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid;
+    margin-left: 15.5%;
+    margin-top: 6.5%;
+    margin-bottom: 6.5%;
+    padding: 3.2% 16%;
+    cursor: pointer;
+}
+
+section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 form div.a-form-container {
+    position: relative;
+    top: 26px;
+    left: 18%;
+}
+
+section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 form div.a-form-container a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+@media (max-width: 1440px) {
+    section.form-section-logIn {
+        width: 85%;
+        height: 100%;
+        position: relative;
+        left: 15%;
+        background-color: #acbccc;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-xl-8 div.img-container {
+        padding-top: 15%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-xl-8 div.img-container img {
+        max-width: 100%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-xl-4 {
+        margin-top: 8%;
+        max-width: 100%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-xl-4 div.form-container_2 {
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-xl-4 div.form-container_2 form {
+        align-self: center;
+        margin: 0 5.5%;
+        padding: 1.5%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-xl-4 div.form-container_2 form h1 {
+        padding-top: 3%;
+        font-size: 43px;
+        color: black;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-xl-4 div.form-container_2 form label.info {
+        display: block;
+        font-size: 3rem;
+        color: black;
+        margin: 1.5% 0;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-xl-4 div.form-container_2 form input.info {
+        display: block;
+        width: 90%;
+        height: 5rem;
+        margin-bottom: 3%;
+        margin-left: 4.5%;
+        font-size: 22px;
+        border-radius: 8px;
+        border: none;
+        padding: 0 3%;
+        background-color: white;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-xl-4 div.form-container_2 form div.remember {
+        display: inline;
+        margin-left: 21%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-xl-4 div.form-container_2 form div.remember label.remember {
+        font-size: 2.5rem;
+        color: black;
+        margin: 1.5% 1.5%;
+    } 
+    
+    section.form-section-logIn div.container div.row div.col-xl-4 div.form-container_2 form div.remember input.checkbox {
+        position: relative;
+        top: 4px;
+        width: 25px;
+        height: 25px;
+        border-radius: 8px;
+        margin: 1.5% 0px 1.5% 3%;
+        background-color: white;
+    }
+    
+    ::-webkit-input-placeholder { color: black; }
+    
+    section.form-section-logIn div.container div.row div.col-xl-4 div.form-container_2 form div.button-form-container button {
+        font-size: 2.3rem;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        margin-left: 12%;
+        margin-top: 6.5%;
+        margin-bottom: 6.5%;
+        padding: 3.2% 16%;
+        cursor: pointer;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-xl-4 div.form-container_2 form div.a-form-container {
+        position: relative;
+        top: 6px;
+        left: 12%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-xl-4 div.form-container_2 form div.a-form-container a {
+        font-size: 20px;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media (max-width: 1024px) {
+    section.form-section-logIn {
+        width: 85%;
+        height: 100%;
+        position: relative;
+        left: 15%;
+        background-color: #acbccc;
+    }
+
+    section.form-section-logIn div.container {
+        margin: 0;
+        width: 100%;
+    }
+
+    section.form-section-logIn div.container div.row {
+        width: 100%;
+        margin: 0;
+    }
+
+    section.form-section-logIn div.container div.row div.col-lg-8 {
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-lg-8 div.img-container {
+        padding-top: 13%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-lg-8 div.img-container img {
+        max-width: 100%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-lg-4 {
+        margin-top: 7%;
+        max-width: 100%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 {
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 form {
+        align-self: center;
+        margin: 0 5.5%;
+        padding: 1.5%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 form h1 {
+        padding-top: 3%;
+        font-size: 25px;
+        color: black;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 form label.info {
+        display: block;
+        font-size: 2rem;
+        color: black;
+        margin: 1.5% 0;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 form input.info {
+        display: block;
+        width: 90%;
+        height: 3rem;
+        margin-bottom: 3%;
+        margin-left: 4.5%;
+        font-size: 15px;
+        border-radius: 8px;
+        border: none;
+        padding: 0 3%;
+        background-color: white;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 form div.remember {
+        display: inline;
+        margin-left: 23%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 form div.remember label.remember {
+        font-size: 1.5rem;
+        color: black;
+        margin: 1.5% 1.5%;
+    } 
+    
+    section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 form div.remember input.checkbox {
+        position: relative;
+        top: 4px;
+        width: 17px;
+        height: 17px;
+        border-radius: 8px;
+        margin: 1.5% 0px 1.5% 3%;
+        background-color: white;
+    }
+    
+    ::-webkit-input-placeholder { color: black; }
+    
+    section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 form div.button-form-container button {
+        font-size: 1.5rem;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        margin-left: 14%;
+        margin-top: 6.5%;
+        margin-bottom: 6.5%;
+        padding: 3.2% 16%;
+        cursor: pointer;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 form div.a-form-container {
+        position: relative;
+        top: 6px;
+        left: 9%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-lg-4 div.form-container_2 form div.a-form-container a {
+        font-size: 15px;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media (max-width: 768px) {
+    section.form-section-logIn {
+        width: 85%;
+        height: 100%;
+        position: relative;
+        left: 15%;
+        background-color: #acbccc;
+    }
+
+    section.form-section-logIn div.container {
+        width: 100%;
+    }
+
+    section.form-section-logIn div.container div.row {
+        width: 100%;
+    }
+
+    section.form-section-logIn div.container div.row div.first {
+        display: none;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 {
+        margin-top: 3%;
+        padding-right: 20%;
+        max-width: 100%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 {
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form {
+        align-self: center;
+        margin: 0 5.5%;
+        padding: 1.5%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form h1 {
+        padding-top: 3%;
+        font-size: 30px;
+        margin-left: 37%;
+        color: black;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form label.info {
+        display: block;
+        font-size: 2rem;
+        color: black;
+        margin: 1.5% 12%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form input.info {
+        display: block;
+        width: 100%;
+        height: 3rem;
+        margin-bottom: 3%;
+        margin-left: 12%;
+        font-size: 15px;
+        border-radius: 8px;
+        border: none;
+        padding: 0 3%;
+        background-color: white;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.remember {
+        display: inline;
+        margin-left: 12%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.remember label.remember {
+        font-size: 2rem;
+        color: black;
+        margin: 1.5% 1.5%;
+    } 
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.remember input.checkbox {
+        position: relative;
+        top: 4px;
+        width: 20px;
+        height: 20px;
+        border-radius: 8px;
+        margin: 1.5% 0px 1.5% 3%;
+        background-color: white;
+    }
+    
+    ::-webkit-input-placeholder { color: black; }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.button-form-container button {
+        font-size: 2.5rem;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        margin-left: 42%;
+        margin-top: 1%;
+        margin-bottom: 3%;
+        padding: 2% 5%;
+        cursor: pointer;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.a-form-container {
+        position: relative;
+        top: 6px;
+        left: 40%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.a-form-container a {
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media (max-width: 425px) {
+    section.form-section-logIn {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 15%;
+        left: 0%;
+        background-color: #acbccc;
+    }
+
+    section.form-section-logIn div.container {
+        margin: 0;
+        width: 100%;
+    }
+
+    section.form-section-logIn div.container div.row {
+        width: 100%;
+        margin: 0;
+    }
+
+    section.form-section-logIn div.container div.row div.first {
+        display: none;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 {
+        margin-top: 3%;
+        padding-right: 0%;
+        max-width: 100%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 {
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form {
+        align-self: center;
+        margin: 0 5.5%;
+        padding: 1.5%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form h1 {
+        padding-top: 3%;
+        font-size: 30px;
+        margin-left: 20%;
+        color: black;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form label.info {
+        display: block;
+        font-size: 2rem;
+        color: black;
+        margin: 1.5% 5%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form input.info {
+        display: block;
+        width: 90%;
+        height: 3rem;
+        margin-bottom: 3%;
+        margin-left: 4.5%;
+        font-size: 15px;
+        border-radius: 8px;
+        border: none;
+        padding: 0 3%;
+        background-color: white;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.remember {
+        display: inline;
+        margin-left: 28%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.remember label.remember {
+        font-size: 2rem;
+        color: black;
+        margin: 1.5% 1.5%;
+    } 
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.remember input.checkbox {
+        position: relative;
+        top: 4px;
+        width: 20px;
+        height: 20px;
+        border-radius: 8px;
+        margin: 1.5% 0px 1.5% 3%;
+        background-color: white;
+    }
+    
+    ::-webkit-input-placeholder { color: black; }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.button-form-container button {
+        font-size: 2.5rem;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        margin-left: 24%;
+        margin-top: 1%;
+        margin-bottom: 3%;
+        padding: 2% 5%;
+        cursor: pointer;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.a-form-container {
+        position: relative;
+        top: 6px;
+        left: 19%;
+        display: inline;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.a-form-container a {
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media (max-width: 375px) {
+    section.form-section-logIn {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 15%;
+        left: 0%;
+        background-color: #acbccc;
+    }
+
+    section.form-section-logIn div.container {
+        margin: 0;
+        width: 100%;
+    }
+
+    section.form-section-logIn div.container div.row {
+        width: 100%;
+        margin: 0;
+    }
+
+    section.form-section-logIn div.container div.row div.first {
+        display: none;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 {
+        margin-top: 3%;
+        padding-right: 0%;
+        max-width: 100%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 {
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form {
+        align-self: center;
+        margin: 0 5.5%;
+        padding: 1.5%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form h1 {
+        padding-top: 3%;
+        font-size: 30px;
+        margin-left: 13%;
+        color: black;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form label.info {
+        display: block;
+        font-size: 2rem;
+        color: black;
+        margin: 1.5% 5%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form input.info {
+        display: block;
+        width: 90%;
+        height: 3rem;
+        margin-bottom: 3%;
+        margin-left: 4.5%;
+        font-size: 15px;
+        border-radius: 8px;
+        border: none;
+        padding: 0 3%;
+        background-color: white;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.remember {
+        display: inline;
+        margin-left: 24%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.remember label.remember {
+        font-size: 2rem;
+        color: black;
+        margin: 1.5% 1.5%;
+    } 
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.remember input.checkbox {
+        position: relative;
+        top: 4px;
+        width: 20px;
+        height: 20px;
+        border-radius: 8px;
+        margin: 1.5% 0px 1.5% 3%;
+        background-color: white;
+    }
+    
+    ::-webkit-input-placeholder { color: black; }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.button-form-container button {
+        font-size: 2.5rem;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        margin-left: 18%;
+        margin-top: 1%;
+        margin-bottom: 3%;
+        padding: 2% 5%;
+        cursor: pointer;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.a-form-container {
+        position: relative;
+        top: 6px;
+        left: 12%;
+        display: inline;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.a-form-container a {
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media (max-width: 320px) {
+    section.form-section-logIn {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 15%;
+        left: 0%;
+        background-color: #acbccc;
+    }
+
+    section.form-section-logIn div.container {
+        margin: 0;
+        width: 100%;
+    }
+
+    section.form-section-logIn div.container div.row {
+        width: 100%;
+        margin: 0;
+    }
+
+    section.form-section-logIn div.container div.row div.first {
+        display: none;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 {
+        margin-top: 3%;
+        padding-right: 0%;
+        max-width: 100%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 {
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form {
+        align-self: center;
+        margin: 0 5.5%;
+        padding: 1.5%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form h1 {
+        padding-top: 3%;
+        font-size: 30px;
+        margin-left: 7%;
+        color: black;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form label.info {
+        display: block;
+        font-size: 2rem;
+        color: black;
+        margin: 1.5% 5%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form input.info {
+        display: block;
+        width: 90%;
+        height: 3rem;
+        margin-bottom: 3%;
+        margin-left: 4.5%;
+        font-size: 15px;
+        border-radius: 8px;
+        border: none;
+        padding: 0 3%;
+        background-color: white;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.remember {
+        display: inline;
+        margin-left: 21%;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.remember label.remember {
+        font-size: 2rem;
+        color: black;
+        margin: 1.5% 1.5%;
+    } 
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.remember input.checkbox {
+        position: relative;
+        top: 4px;
+        width: 20px;
+        height: 20px;
+        border-radius: 8px;
+        margin: 1.5% 0px 1.5% 3%;
+        background-color: white;
+    }
+    
+    ::-webkit-input-placeholder { color: black; }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.button-form-container button {
+        font-size: 2.5rem;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        margin-left: 15%;
+        margin-top: 1%;
+        margin-bottom: 3%;
+        padding: 2% 5%;
+        cursor: pointer;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.a-form-container {
+        position: relative;
+        top: 6px;
+        left: 7%;
+        display: inline;
+    }
+    
+    section.form-section-logIn div.container div.row div.col-md-12 div.form-container_2 form div.a-form-container a {
+        font-size: 18px;
+        text-decoration: none;
+        color: black;
+    }
+}

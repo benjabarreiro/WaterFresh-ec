@@ -21,9 +21,6 @@ router.post('/logIn', loginValidation, usersController.validationLogIn);
 
 router.get('/logout', authMiddleware, usersController.logout);
 
-// READ
-router.get('/list', usersController.list);
-
 // PROFILE
 router.get('/profile/:id', authMiddleware, authMiddleware2, usersController.profile);
 
@@ -35,12 +32,12 @@ router.put('/profile/edit/:id', usersController.updated);
 // DELETE
 router.delete('/profile/delete/:id', usersController.delete);
 
-router.get('/shoppingCart', function(req, res) {
-    res.render('shoppingCart');
-});
-
-router.get('/buyForm', function(req, res) {
+/*router.get('/buyForm', authMiddleware, function(req, res) {
     res.render('buyForm');
-})
+})*/
+
+router.get('/aboutUs', function(req, res){
+    res.render('aboutUs.ejs');
+});
 
 module.exports = router;

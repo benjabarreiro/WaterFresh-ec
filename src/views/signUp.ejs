@@ -5,11 +5,23 @@
 
     <%- include('partials/header.ejs') %>
 
-    <section class="form-section">
+    <section class="form-section-signUp">
+
+        <div class="img-container">
+            <div class="info-register">
+                <h2>Únete a esta experiencia:</h2>
+                <ol>
+                    <li>Tus datos permanecerán protegidos</li>
+                </ol>
+            </div>
+            <img src="/images/waterfallv2.jpg" alt="">
+        </div>
 
         <div class="form-container_2">
 
-            <h1>Registrate</h1>
+            <form action="/users/registration" method="POST">
+
+                <h1>Registrate</h1>
 
             <% if(typeof errors != 'undefined') { %> 
                 <p style="color: red;">ERROR</p>
@@ -19,8 +31,6 @@
                     <% } %>  
                 </ul>
             <% } %> 
-
-            <form action="/users/registration" method="POST">
                 
                 <div>
                     <label for="">
@@ -64,29 +74,16 @@
                     <input name="repassword" type="password" placeholder="Repita su contraseña...">
                 </div>
 
-                <div>
-                    <label for="">
-                        Dirección
-                    </label>
-                    <input name="address" type="text" placeholder="Introduzca su dirección...">
-                </div>
-                
-                <div>
-                    <label for="">
-                        Número de teléfono
-                    </label>
-                    <input name="phone" type="text" placeholder="Introduzca su número de teléfono...">
-                </div>
-
                 <div class="button-form-container">
                     <button type="submit">Registrarse</button>
                 </div>
                 <div class="a-form-container">
-                    <a href="/logIn">¿Ya estás registrado? Inicia Sesión</a>
+                    <a href="/users/logIn">¿Ya estás registrado? Inicia Sesión</a>
                 </div>
                 <br>
             </form>
         </div>
     </section>
+    <%- include('partials/scripts.ejs') %>
 </body>
 </html>

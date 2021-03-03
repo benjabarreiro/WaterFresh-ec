@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Crear producto</h1>
-    <form action="/products/create" method="POST">
+    <form action="/admins/product/create" method="POST" enctype="multipart/form-data">
         <div>
             <label for="">
                 Nombre del producto
@@ -25,6 +25,12 @@
                 Stock del producto
             </label>
             <input type="number" name="stock">
+        </div>
+        <div>
+            <label for="">
+                Imagen del producto
+            </label>
+            <input type="file" name="img_url">
         </div>
         <button type="submit">
             Crear

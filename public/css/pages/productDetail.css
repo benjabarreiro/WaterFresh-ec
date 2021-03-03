@@ -1,0 +1,129 @@
+section.detail_section {
+    width: 85%;
+    height: 100%;
+    position: relative;
+    left: 15%;
+    background-image: url('../../images/montaña-nevada1.webp');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+div.detail-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 800px;
+}
+
+div.detail-container div.closeDetail {
+    position: relative;
+    top: 50px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+div.detail-container div.closeDetail a {
+    color: black;
+}
+
+div.detail-container div.closeDetail a i {
+    position: relative;
+    top: 5px;
+    font-size: 30px;
+}
+
+div.detail-row {
+    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
+}
+
+div.detail-col-8, div.detail-col-4 {
+    padding: 0;
+    margin: 0;
+}
+
+div.img-container-detail {
+    display: inline-flex;
+    margin-bottom: 0;
+    height: 100%;
+}
+
+div.img-container-detail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+div.detail-col-4 {
+    padding: 10px;
+}
+
+div.detail-col-4 h1.detail-h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(56, 61, 61, 0.1);
+}
+
+div.detail-col-4 div.detail-p-container {
+    border-bottom: 1px solid rgba(56, 61, 61, 0.1);
+    padding-top: 20px;
+}
+
+div.detail-col-4 div.detail-p-container p.detail-p {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 40px;   
+}
+
+div.detail-col-4 div.detail-button-container {
+    padding-top: 20px;
+}
+
+div.detail-col-4 div.detail-button-container div.detail-button-users {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.detail-col-4 div.detail-button-container div.detail-button-users button {
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+div.detail-col-4 div.detail-button-container div.detail-button-admin {
+    display: flex;
+}
+
+div.detail-col-4 div.detail-button-container div.detail-button-admin a {
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+div.detail-col-4 div.detail-button-container div.detail-button-admin a button {
+    padding: 2px;
+}
+
+div.detail-col-4 div.detail-button-container div.detail-button-admin form {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+div.detail-col-4 div.detail-button-container div.detail-button-admin form button {
+    padding: 2px;
+}

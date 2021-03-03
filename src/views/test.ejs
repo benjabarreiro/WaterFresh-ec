@@ -1,47 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Water Fresh</title>
-
-    <!-- Styles.css -->
-    <link rel="stylesheet" href="css/pages/logInAndSignIn.css">
-    
-    <script
-      src="https://kit.fontawesome.com/16dbabfb07.js"
-      crossorigin="anonymous"
-    ></script>
-</head>
+<%- include('partials/head.ejs') %> 
 <body>
-    <section class="form-section">
-        <div class="form-container_2">
-            <form action="/users/logIn" method="POST">
-                <h1>Inicio de sesión</h1>
-                <% if(typeof errors != 'undefined') { %> 
-                    <p style="color: red;">ERROR</p>
-                    <ul>
-                        <% for(let i=0; i<errors.length; i++) { %>
-                            <li><%= errors[i].msg %> </li>
-                        <% } %>  
-                    </ul>
-                <% } %> 
-                <label for="">Email</label>
-                <input type="email" name="email" id="" placeholder="Introduzca su email...">
-                <label for="">Contraseña</label>
-                <input type="password" name="password" id="" placeholder="Introduzca su contraseña...">
-                <label for="">Recordame</label>
-                <input type="checkbox" name="remember">
-                <div class="button-form-container">
-                    <button type="submit">Iniciar Sesión</button>
-                </div>
-                <div class="a-form-container">
-                    <a href="/users/registration">¿Nuevo por acá? Registrate</a><br>
-                    <a href="">¿Olvidaste tu contraseña?</a>
-                </div>
-                <br>
-            </form>
-        </div>
-    </section>
+    
+    <div class="container">
+        <button type="button" class="slide_in">Slide In</button>
+    </div>
+
 </body>
 </html>

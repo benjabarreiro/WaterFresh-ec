@@ -1,0 +1,149 @@
+<div id="shoppingCart-container" class="shoppingCart-container">
+    <form class="shoppingCart" action="/" method="POST">
+        <div class="xAndTitle">
+            <span class="hideShoppingCart" onclick="hideShoppingCart()"><i class="fas fa-times"></i></span>
+            Carrito de Compras
+        </div>
+        <div class="shoppingCartDetail">
+            <div class="container productCart-container">
+                
+                <% for(let i=0; i<products.length; i++) { %>
+
+                    <div class="row productCart itemDisplay<%= products[i].id %> ">
+
+                            <div class="col-5 imgContainerCart">
+                                <img class="imgCart" src="<%= products[i].img_url %> " alt="">
+                            </div>
+
+                            <div class="col-7 itemData">
+                                <div class="w-100">
+                                    <h6 class="productName"><%= products[i].title %> </h6>
+                                    <div class="cartQuantity-container">
+                                        <div class="cartQuantityChooseAlign">
+                                            <% if(products[i].id === 1) { %> 
+                                            <i onclick="decrementValue1()" class="fas fa-arrow-left formQuantityIcon"></i>
+                                            <% } %>
+                                            <% if(products[i].id === 2) { %> 
+                                            <i onclick="decrementValue2()" class="fas fa-arrow-left formQuantityIcon"></i>
+                                            <% } %>
+                                            <% if(products[i].id === 3) { %> 
+                                            <i onclick="decrementValue3()" class="fas fa-arrow-left formQuantityIcon"></i>
+                                            <% } %> 
+                                            <% if(products[i].id === 4) { %> 
+                                            <i onclick="decrementValue4()" class="fas fa-arrow-left formQuantityIcon"></i>
+                                            <% } %>
+                                            <% if(products[i].id === 5) { %> 
+                                            <i onclick="decrementValue5()" class="fas fa-arrow-left formQuantityIcon"></i>
+                                            <% } %>
+                                            <% if(products[i].id === 6) { %> 
+                                            <i onclick="decrementValue6()" class="fas fa-arrow-left formQuantityIcon"></i>
+                                            <% } %>
+                                            <% if(products[i].id === 7) { %> 
+                                            <i onclick="decrementValue7()" class="fas fa-arrow-left formQuantityIcon"></i>
+                                            <% } %>
+                                            <div class="quantityNumber">
+                                                <input id="inc<%=products[i].id%>" type="number" value="1">
+                                            </div>
+                                            <% if(products[i].id === 1) { %> 
+                                            <i onclick="incrementValue1()" class="fas fa-arrow-right formQuantityIcon"></i>
+                                            <% } %> 
+                                            <% if(products[i].id === 2) { %> 
+                                            <i onclick="incrementValue2()" class="fas fa-arrow-right formQuantityIcon"></i>
+                                            <% } %> 
+                                            <% if(products[i].id === 3) { %> 
+                                            <i onclick="incrementValue3()" class="fas fa-arrow-right formQuantityIcon"></i>
+                                            <% } %> 
+                                            <% if(products[i].id === 4) { %> 
+                                            <i onclick="incrementValue4()" class="fas fa-arrow-right formQuantityIcon"></i>
+                                            <% } %> 
+                                            <% if(products[i].id === 5) { %> 
+                                            <i onclick="incrementValue5()" class="fas fa-arrow-right formQuantityIcon"></i>
+                                            <% } %> 
+                                            <% if(products[i].id === 6) { %> 
+                                            <i onclick="incrementValue6()" class="fas fa-arrow-right formQuantityIcon"></i>
+                                            <% } %> 
+                                            <% if(products[i].id === 7) { %> 
+                                            <i onclick="incrementValue7()" class="fas fa-arrow-right formQuantityIcon"></i>
+                                            <% } %> 
+                                        </div>
+                                    </div>
+                                    <h6 class="itemCartPrice"><%= products[i].price %> </h6>
+                                </div>
+                                <% if(products[i].id ===1) { %>
+                                    <div onclick="removeSC1()" class="trashIcon remove<%=products[i].id%>">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                <% } %>
+                                <% if(products[i].id ===2) { %>
+                                    <div onclick="removeSC2()" class="trashIcon remove<%=products[i].id%>">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                <% } %>
+                                <% if(products[i].id ===3) { %>
+                                    <div onclick="removeSC3()" class="trashIcon remove<%=products[i].id%>">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                <% } %>
+                                <% if(products[i].id ===4) { %>
+                                    <div onclick="removeSC4()" class="trashIcon remove<%=products[i].id%>">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                <% } %>
+                                <% if(products[i].id ===5) { %>
+                                    <div onclick="removeSC5()" class="trashIcon remove<%=products[i].id%>">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                <% } %>
+                                <% if(products[i].id ===6) { %>
+                                    <div onclick="removeSC6()" class="trashIcon remove<%=products[i].id%>">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                <% } %>
+                                <% if(products[i].id ===7) { %>
+                                    <div onclick="removeSC7()" class="trashIcon remove<%=products[i].id%>">
+                                        <i class="fas fa-trash"></i>
+                                    </div>
+                                <% } %>
+                            </div>
+
+                    </div>
+
+                <% } %> 
+
+                
+            </div>
+            <div class="container">
+                <div class="cartDivider"></div>
+                <div class="cartRadioButton">
+                    <p style="background-color: rgba(56, 61, 61, 0.03); padding: 15px 0;">
+                        <label>
+                        <input class="with-gap" name="group3" type="radio"/>
+                        <span style="font-size: large; color: black;">Envío 100% GRATIS</span>
+                        </label>
+                    </p>
+                    <p style="background-color:  rgba(56, 61, 61, 0.03); padding: 15px 0;">
+                        <label>
+                        <input class="with-gap" name="group3" type="radio"/>
+                        <span style="font-size: large; color: black;">Retirar por la sucursal</span>
+                        </label>
+                    </p>
+                    <div class="cartDivider"></div>
+                </div>
+                <div>
+                    <h2 class="totalNoDelivery">
+                        <span class="span1">
+                            Total:
+                        </span>
+                        <span class="span2">
+                            $$$
+                        </span>
+                    </h2>
+                </div>
+                <div class="buttonCart">
+                    <a href="#" class="hideShoppingCart" type="button" onclick="hideShoppingCart()">Ver más productos</a>
+                    <button type="submit" class="startBuying"><a id="msgWpp" href="https://api.whatsapp.com/send?phone=5491156621323&text=Listado%20de%20compra:%0A">Iniciar Compra</a></button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

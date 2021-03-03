@@ -1,64 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
-  <%- include('partials/head.ejs') %>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfíl Editar</title>
 
+    <!-- Materialize.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+    <!-- Bootstrap.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Styles.css -->
+    <link rel="stylesheet" href="/css/main.css">
+    
+    <script
+      src="https://kit.fontawesome.com/16dbabfb07.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 
 <body>
-  <h1>Editar cuenta</h1>
+  <%- include('partials/header.ejs') %> 
+  <section class="userProfile-section">
+    <h1 class="edit-up-h1">Editar cuenta</h1>
 
-  <form action="/users/profile/edit/<%= user.id %>?_method=PUT" method="POST">
-    <div>
-      <label for="">
-        Nombre
-      </label>
-      <input type="text" name="first_name" value=" <%= user.first_name %> ">
-    </div>
-    <div>
-      <label for="">
-        Apellido
-      </label>
-      <input type="text" name="last_name" value=" <%= user.last_name %> ">
-    </div>
-    <div>
-      <label for="">
-        Nombre de usuario
-      </label>
-      <input type="text" name="username" value=" <%= user.username %> ">
-    </div>
-    <div>
-      <label for="">
-        Email
-      </label>
-      <input type="email" name="email" value=" <%= user.email %> ">
-    </div>
-    <div>
-      <label for="">
-        Contraseña
-      </label>
-      <input type="password" name="password" value=" <%= user.password %> ">
-    </div>
-    <div>
-      <label for="">
-        Repita contraseña
-      </label>
-      <input type="password" name="repassword" value=" <%= user.repassword %> ">
-    </div>
-    <div>
-      <label for="">
-        Dirección
-      </label>
-      <input type="text" name="address" value=" <%= user.address %> ">
-    </div>
-    <div>
-      <label for="">
-        Teléfono
-      </label>
-      <input type="text" name="phone" value=" <%= user.phone %> ">
-    </div>
-    <button type="submit">Editar</button>
-  </form>
+    <form class="form-edit-up" action="/users/profile/edit/<%= user.id %>?_method=PUT" method="POST">
+      <div>
+        <label class="upEdit-label" for="">
+          Nombre
+        </label>
+        <input class="upEdit-input" type="text" name="first_name" value=" <%= user.first_name %> ">
+      </div>
+      <div>
+        <label class="upEdit-label" for="">
+          Apellido
+        </label>
+        <input class="upEdit-input" type="text" name="last_name" value=" <%= user.last_name %> ">
+      </div>
+      <div>
+        <label class="upEdit-label" for="">
+          Nombre de usuario
+        </label>
+        <input class="upEdit-input" type="text" name="username" value=" <%= user.username %> ">
+      </div>
+      <div>
+        <label class="upEdit-label" for="">
+          Email
+        </label>
+        <input class="upEdit-input" type="email" name="email" value=" <%= user.email %> ">
+      </div>
+      <div>
+        <label class="upEdit-label" for="">
+          Contraseña
+        </label>
+        <input class="upEdit-input" type="password" name="password" value=" <%= user.password %> ">
+      </div>
+      <div>
+        <label class="upEdit-label" for="">
+          Repita contraseña
+        </label>
+        <input class="upEdit-input" type="password" name="repassword" value=" <%= user.repassword %> ">
+      </div>
+      <div>
+        <label class="upEdit-label" for="">
+          Dirección
+        </label>
+        <input class="upEdit-input" type="text" name="address" value=" <%= user.address %> ">
+      </div>
+      <div>
+        <label class="upEdit-label" for="">
+          Teléfono
+        </label>
+        <input class="upEdit-input" type="text" name="phone" value=" <%= user.phone %> ">
+      </div>
+      <div class="button-edit-container">
+        <button class="up-button-edit" type="submit">Editar</button>
+      </div>
+    </form>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/admins/create/<%=newAdmin.id%>?_method=PUT" method="POST">
+        Nuevo Admin
+        <select name="admin">
+            <option value="0">false</option>
+            <option value="1">true</option>
+        </select>
+        <button type="submit">Crear</button>
+    </form>
+</body>
+</html>

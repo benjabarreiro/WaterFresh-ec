@@ -2,9 +2,17 @@
 
 @import url('partials/header.css');
 @import url('partials/slider.css');
+@import url('partials/shoppingCart.css');
 
 @import url('pages/aboutUs.css');
 @import url('pages/index.css');
-@import url('pages/logInAndSignIn.css');
+@import url('pages/signUp.css');
+@import url('pages/logIn.css');
 @import url('pages/distributor.css');
-@import url('pages/shoppingCart.css');
+@import url('pages/contact.css');
+@import url('pages/buyForm.css');
+@import url('pages/test.css');
+@import url('pages/productDetail.css');
+@import url('pages/admins.css');
+@import url('pages/userProfile.css');
+@import url('pages/userProfileEdit.css');

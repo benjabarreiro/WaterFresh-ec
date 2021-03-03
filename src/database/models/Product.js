@@ -21,6 +21,10 @@ module.exports = (sequelize, dataTypes) => {
         img_url: {
           type: dataTypes.STRING(500),
           allowNull: true
+        },
+        img_slider: {
+          type: dataTypes.STRING(500),
+          allowNull: true
         }
     };
     let config = {

@@ -3,17 +3,26 @@
         <a href="/"><img class="logo" src="/images/logo3.svg" alt=""></a>
     </div>
     <div class="menu-container">
-        <a class="menu-container_items" href="/distributors">Conviertete en Distribuidor</a>
-        <a class="menu-container_items" href="/aboutUs">Sobre Nosotros</a>
-        <% if(locals.localUser != undefined) { %> 
-        <a class="menu-container_items" href="/users/profile/<%= locals.localUser.id %> ">Perfil</a>
-        <% } else { %> 
-        <a class="menu-container_items" href="/users/logIn">Iniciá Sesión</a>
-        <% } %> 
-        <a class="menu-container_items" href="/contact">Contacto</a>
+        <div class="button-container">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-user"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <% if(locals.localUser != undefined) { %> 
+                <li><a class="dropdown-item" href="/users/profile/<%= locals.localUser.id %> ">Ir al Perfil</a></li>
+                <li><a class="dropdown-item" href="/users/logout">Cerrar Sesión</a></li>
+                <% } else { %> 
+                <li><a class="dropdown-item" href="/users/logIn">Iniciar Sesión</a></li>
+                <li><a class="dropdown-item" href="/users/registration">Registrarse</a></li>
+                <% } %> 
+            </ul>
+        </div>
+        <a class="first-a-header" href="/distributors/register">Conviertete en Distribuidor</a>
+        <a class="second-a-header" href="/users/aboutUs">Sobre Nosotros</a>
     </div>
     <div class="social-media_container">
         <a class="first-icon" href="https://www.facebook.com/waterfreshec/"><i class="fab fa-facebook-f"></i></a>
         <a class="second-icon" href="https://www.instagram.com/waterfreshec/"><i class="fab fa-instagram"></i></a>
     </div>
+    <a id="hideWpp" class="whatsapp" href="https://api.whatsapp.com/send?phone=593939998966&text=hola,%20¿qué%20tal%20estás?"><i class="fa fa-whatsapp whatsapp-icon"></i></a>
 </aside>

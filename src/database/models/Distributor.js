@@ -6,31 +6,14 @@ module.exports = (sequelize, dataTypes) => {
             primaryKey: true,
             autoIncrement: true
         },
-        first_name: {
-            type: dataTypes.STRING(30),
+        company_name: {
+            type: dataTypes.STRING(100),
             allowNull: false
-        },
-        last_name: {
-            type: dataTypes.STRING(30),
-            allowNull: false
-        },
-        username: {
-            type: dataTypes.STRING(30),
-            allowNull: false,
-            unique: true
         },
         email: {
             type: dataTypes.STRING(100),
             allowNull: false,
             unique: true
-        },
-        password: {
-            type:dataTypes.STRING(16),
-            allowNull: false
-        },
-        repassword: {
-            type:dataTypes.STRING(16),
-            allowNull: false
         },
         address: {
             type:dataTypes.STRING(45),
@@ -38,6 +21,10 @@ module.exports = (sequelize, dataTypes) => {
         },
         phone: {
             type: dataTypes.STRING(13),
+            allowNull: false
+        },
+        appointment: {
+            type: dataTypes.DATE,
             allowNull: false
         }
     };

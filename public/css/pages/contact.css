@@ -1,0 +1,12 @@
+body.contact {
+    background-image: url('public/images/circle-cropped.png');
+}
+
+form.contact {
+    background-color: orange;
+    margin: 100px;
+}
+
+form.contact input {
+    height: 100px;
+}

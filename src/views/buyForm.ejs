@@ -2,8 +2,213 @@
 <html lang="en">
 <head>
     <%- include('partials/head.ejs') %> 
-</head>
-<body>
-    <%- include('partials/header.ejs') %> 
+</head> 
+<body onload="defaultDisplay()">
+    <div class="buyForm-main">
+        <!-- HEADER -->
+        <div class="header-buyForm">
+            <div class="title-buyForm">
+                <a href="/"><h1>Water Fresh</h1></a>
+            </div>
+            <div class="safe-shopping">
+                <span class="spanLeft-buyForm">
+                    <img src="/images/safe-shopping.svg" alt="">
+                </span>
+                <span class="spanRight-buyForm">
+                    <p class="firstP-buyForm">COMPRA SEGURA</p>
+                    <p class="secondP-buyForm">100% PROTEGIDO</p>
+                </span>
+            </div>
+        </div>
+        <!-- BODY -->
+        <div class="buyForm-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <form class="buyForm" action="">
+                            <div id="buyForm1Hidden" class="buyForm1">
+
+                                <div class="contact-buyForm">
+                                    <h2 class="contact-h2-buyForm">Datos de contacto</h2>
+                                    <input class="contact-input-buyForm" type="email" placeholder="Email de contacto">
+                                </div>
+
+                                <div class="buyForm-radioButton">
+                                    <h2 class="h2-radioButton" style="font-size: 40px; margin-bottom: 10px;">Entrega:</h2>
+                                    <p class="p-radioButton">
+                                        <label>
+                                        <input id="delivery-radioButton" onclick="showDelivery()" class="with-gap" name="group3" type="radio"/>
+                                        <span style="font-size: large; color: black;">Envío 100% GRATIS</span>
+                                        </label>
+                                    </p>
+                                    <p class="p-radioButton">
+                                        <label>
+                                        <input id="pickUp-radioButton" onclick="showPickUp()" class="with-gap" name="group3" type="radio"/>
+                                        <span style="font-size: large; color: black;">Retirar por la sucursal</span>
+                                        </label>
+                                    </p>
+                                </div>
+        
+                                <div id="showHideDelivery" class="delivery-buyForm">
+                                    <h2 class="delivery-h2-buyForm">Delivery</h2>
+                                    <div>
+                                        <h2>Datos del destinatario</h2>
+                                        <input class="delivery-input-buyForm" type="text" placeholder="Nombre">
+                                        <input class="delivery-input-buyForm" type="text" placeholder="Apellido">
+                                    </div>
+                                    <div>
+                                        <h2>Domicilio del destinatario</h2>
+                                        <input class="delivery-input-buyForm" type="text" placeholder="Calle">
+                                        <input class="delivery-input-buyForm" type="text" placeholder="Número de residencia">
+                                        <input class="delivery-input-buyForm" type="text" placeholder="Número de departamento (Opcional)">
+                                        <input class="delivery-input-buyForm" type="text" placeholder="Codigo postal">
+                                        <input class="delivery-input-buyForm" type="text" placeholder="Provincia">
+                                    </div>
+                                </div>
+        
+                                <div id="showHidePickUp" class="pickUp-buyForm">
+                                    <h2 class="pickUp-h2-buyForm">Retirar</h2>
+                                    <p class="pickUp-p-buyForm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, a?
+                                    </p>
+                                </div>
+                                
+                                <div class="billing-buyForm">
+                                    <h2 class="billing-h2-buyForm">Datos de facturación</h2>
+                                    <input class="billing-input-buyForm" type="text" placeholder="D.N.I.">
+                                    <input id="doNotDisp1" class="billing-input-buyForm" type="text" placeholder="País">
+                                    <p id="equal">
+                                        <label>
+                                          <input id="inpDoNotDisp" onclick="equalDeliveryBilling()" type="checkbox" class="filled-in" />
+                                          <span>Mis datos de entrega y facturación son los mismos.</span>
+                                        </label>
+                                    </p>
+                                    <input id="doNotDisp2" class="billing-input-buyForm" type="text" placeholder="Calle">
+                                    <input id="doNotDisp3" class="billing-input-buyForm" type="text" placeholder="Número de residencia">
+                                    <input id="doNotDisp4" class="billing-input-buyForm" type="text" placeholder="Número de departamento (Opcional)">
+                                    <input id="doNotDisp5" class="billing-input-buyForm" type="text" placeholder="Codigo postal">
+                                    <input id="doNotDisp6" class="billing-input-buyForm" type="text" placeholder="Provincia">
+                                    <div class="buyForm-continuePayment">
+                                        <button onclick="displayBuyForm2()" class="continuePayment" type="button">Continuar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="buyForm2Hidden" class="buyForm2">
+
+                                <ul class="collapsible">
+                                    <li>
+                                      <div class="collapsible-header">
+                                          <div class="flex-left">
+                                            <i class="fas fa-truck"></i>Entrega
+                                          </div>
+                                        <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div class="collapsible-body">
+                                            <div class="deliverTitle">
+                                                <i class="fas fa-thumbtack"></i>
+                                                Punto de retiro
+                                            </div>
+                                            <div class="emailTitle">
+                                                <span>Email</span>
+                                            </div>
+                                            <div class="emailData">
+                                                <span>Email</span>
+                                            </div>
+                                            <div class="billingTitle">
+                                                <span>Datos de Facturación</span>
+                                            </div>
+                                            <div class="billingData">
+                                                <span>Datos de Facturación</span>
+                                            </div>
+                                            <div class="personTitle">
+                                                <span>Persona que retirará el pedido</span>
+                                            </div>
+                                            <div class="personData">
+                                                <span>Persona que retirará el pedido</span>
+                                            </div>
+                                            <div class="edit">
+                                                <a href="">Editar</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <h2 class="paymentMethods">Medio de pago</h2>
+
+                                <ul class="collapsible">
+                                    <li>
+                                      <div class="collapsible-header">
+                                        <div class="flex-left">
+                                            <i class="far fa-credit-card"></i>Tarjeta de crédito/débito
+                                        </div>
+                                        <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div id="creditCardBody" class="collapsible-body">
+                                          <input class="cardNumber" type="text" placeholder="Número de tarjeta">
+                                          <input class="cardOwner" type="text" placeholder="Titular de tarjeta">
+                                          <input class="cardExpire" type="text" placeholder="Vencimiento(MM/AA)">
+                                          <input class="cardSecurity" type="text" placeholder="CVV">
+                                          <input type="text" placeholder="Documento del titular">
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="collapsible-header">
+                                            <div class="flex-left">
+                                                <i class="fab fa-paypal"></i>Paypal
+                                            </div>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div id="paypalBody" class="collapsible-body">
+                                            <span>Lorem ipsum dolor sit amet.</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="collapsible-header">
+                                            <div class="flex-left">
+                                                <i class="far fa-handshake"></i>Mercado Pago
+                                            </div>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                        <div id="mercadoPagoBody" class="collapsible-body">
+                                            <span>Lorem ipsum dolor sit amet.</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                
+                                <div class="buyForm-makePayment">
+                                    <div class="goBackButton-container">
+                                        <button class="goBackBuyForm1" onclick="displayBuyForm1()" type="button">Volver atrás</button>
+                                    </div>
+                                    <button class="makePayment" type="submit">Realizar pedido</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-4">
+                        <!-- ASIDE -->
+                        <div class="shoppingCartInfo-buyForm">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <img src="/img-slider/aguaIdealBotellon.jpg" alt="">
+                                    </div>
+                                    <div class="col-5">
+                                        <h6 class="first">Agua Ideal Botellón</h6>
+                                        <h6>$5</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="totalToBePayed">
+                                <span class="firstSpan">Total:</span>
+                                <span>$$$</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/scripts/buyForm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>

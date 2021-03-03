@@ -1,30 +1,55 @@
-<h1>Nuestros Productos</h1>
+<h2 class="ourProducts">Nuestros Productos</h2>
 
-        <div class="container">
+<div class="container">
 
-          <div class="row">
+  <div class="row">
 
-            <% for(let i=0; i<products.length; i++) { %> 
+    <% for(let i=0; i<products.length; i++) { %> 
 
-                <div class="col-3">
-                  <div class="img-container_product1">
-                      <img src="<%= products[i].img_url %> " alt="">
-                  </div>
-                  <div class="product-info">
-                      <h2 class="h2-top"><%= products[i].title %> </h2><br>
-                      <div class="priceAndButton">
-                          <h2 class="h2-bottom">$<%= products[i].price %> | Stock: <%= products[i].stock %></h2>
-                          <div class="button-container">
-                            <i class="fas fa-cart-plus icon-top"></i>
-                            <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false">
-                              COMPRAR
-                            </button>
-                            <a href="/products/detail/<%= products[i].id %> ">Ver más</a>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-
-              <% } %> 
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+          <div class="background">
+            <div class="img-container_product1">
+                <img src="img-db/<%= products[i].img_url %> " alt="">
             </div>
+            <div class="product-info">
+              <div class="span-container">
+                <span class="title-container"> <%= products[i].title %> </span>
+                <div>
+                  <span class="price-container"> $<%= products[i].price %> </span>
+                </div>
+              </div>
+            </div>
+            <!--
+            <% if(products[i].id === 1) { %>
+              <a onclick="showShoppingCart()"><i class="fas fa-cart-plus icon-top"></i></a>
+            <% } %>
+            <% if(products[i].id === 2) { %>
+              <a onclick="addSC2()"><i class="fas fa-cart-plus icon-top"></i></a>
+            <% } %>
+            <% if(products[i].id === 3) { %>
+              <a onclick="addSC3()"><i class="fas fa-cart-plus icon-top"></i></a>
+            <% } %>
+            <% if(products[i].id === 4) { %>
+              <a onclick="addSC4()"><i class="fas fa-cart-plus icon-top"></i></a>
+            <% } %>
+            <% if(products[i].id === 5) { %>
+              <a onclick="addSC5()"><i class="fas fa-cart-plus icon-top"></i></a>
+            <% } %>
+            <% if(products[i].id === 6) { %>
+              <a onclick="addSC6()"><i class="fas fa-cart-plus icon-top"></i></a>
+            <% } %>
+            <% if(products[i].id === 7) { %>
+              <a onclick="addSC7()"><i class="fas fa-cart-plus icon-top"></i></a>
+            <% } %>
+            -->
+          </div>
+          <!--
+          <div class="a-moreInfo-container" id="container1">
+            <a id="mouse1" class="moreInfo" href="products/detail/<%= products[i].id %> ">Más información</a>
+          </div>
+          -->
         </div>
+
+      <% } %> 
+    </div>
+</div>

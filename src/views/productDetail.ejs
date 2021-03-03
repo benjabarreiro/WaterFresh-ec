@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<%- include('partials/head.ejs') %> 
 <body>
-    <h1><%= product.title %> </h1>
-    <img src="<%= product.img_url %> " alt="">
-    <p>Precio: <%= product.price %> </p>
-    <p>Stock: <%= product.stock %> </p>
-    <button>Comprar</button>
-    <button>Agregar al carrito</button>
-    <a href="/products/detail/edit/<%= product.id %> ">
-        <button type="submit">Editar</button>
-    </a>
-    <form action="/products/detail/delete/<%= product.id %>?_method=DELETE" method="POST">
-        <button type="submit">
-            Borrar Producto
-        </button>
-    </form>
+    <%- include('partials/header.ejs') %> 
+    <section class="detail_section">
+
+
+        <div class="container detail-container">
+            <div class="closeDetail"><a href="/"><i class="fas fa-times"></i></a></div>
+            <div class="row detail-row">
+                <div class="col-8 detail-col-8">
+                    <div class="img-container-detail">
+                        <img src="/<%= product.img_url %> " alt="">
+                    </div>
+                </div>
+                <div class="col-4 detail-col-4">
+                    <h1 class="detail-h1"><%= product.title %> </h1>
+                    <div class="detail-p-container">
+                        <p class="detail-p">Precio: $<%= product.price %> </p>
+                        <p class="detail-p">Stock: <%= product.stock %> </p>
+                    </div>
+                    <div class="detail-button-container">
+                        <div class="detail-button-users">
+                            <button>Agregar al carrito</button>
+                            <button>Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/scripts/shoppingCart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>

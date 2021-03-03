@@ -3,60 +3,40 @@ const path = require('path');
 const db = require('../database/models');
 
 module.exports = {
-    create: function(req, res) {
-        res.render('createProduct');
-    },
-    saved: function(req, res) {
-        db.Products.create({
-            title: req.body.title,
-            price: req.body.price,
-            stock: req.body.stock
+    list: function(req, res) {
+        let Products = db.Products.findAll();
+
+        let Users = db.Users.findByPk(req.params.id, {
+            include: [
+                {
+                    association: 'products_shopping_cart'
+                }
+            ]
         });
 
-        res.redirect('/');
+        Promise.all([Products, Users])
+            .then(function(result) {
+                res.render('index.ejs', {
+                    products: result[0],
+                    users: result[1]
+                });
+            })
+            .catch(function (error) {
+                if(error == true) {
+                    res.redirect('/users/logIn');
+                }
+            });
     },
-    list: function(req, res) {
-        db.Products.findAll()
-            .then(
-                function(products) {
-                    res.render("index.ejs", {
-                        products:products
-                    })
-                })
+    addProductsCart: function(req, res) {
+        db.Products_Users.create({
+            id_product: req.body.product,
+            id_user: req.params.id
+        });
     },
     detail: function(req, res) {
         db.Products.findByPk(req.params.id)
             .then(function(product) {
                 res.render('productDetail', {product:product});
             })
-    },
-    edit: function(req, res) {
-       db.Products.findByPk(req.params.id)
-        .then(function(product) {
-            res.render('productDetailEdit', {product:product});
-        }) 
-    },
-    updated: function(req, res) {
-        db.Products.update({
-            title: req.body.title,
-            price: req.body.price,
-            stock: req.body.stock
-        },
-        {
-            where: {
-                id: req.params.id
-            }
-        });
-
-        res.redirect('/products/detail/' + req.params.id);
-    },
-    delete: function(req, res) {
-        db.Products.destroy({
-            where: {
-                id: req.params.id
-            }
-        });
-
-        res.redirect('/')
     }
 }

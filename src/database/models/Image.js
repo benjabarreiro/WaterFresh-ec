@@ -7,7 +7,7 @@ module.exports = (sequelize, dataTypes) => {
             primaryKey: true,
             autoIncrement: true
         },
-        product_id: {
+        id_product: {
             type: dataTypes.INTEGER(100).UNSIGNED,
             allowNull: false,
             references: {
@@ -35,7 +35,7 @@ module.exports = (sequelize, dataTypes) => {
 
         Image.belongsTo(models.Products, {
             as: 'products',
-            foreignKey: 'product_id'
+            foreignKey: 'id_product'
         })
 
     }

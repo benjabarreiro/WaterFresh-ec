@@ -10,9 +10,11 @@
     <ul>
         <% for (let i=0; i<distributors.length; i++) { %> 
             <li>
-                <a href="/distributors/profile/<%= distributors[i].id %> ">
-                    <%= distributors[i].first_name %> 
-                </a>
+                <%= distributors[i].company_name %> -
+                <%= distributors[i].email %> -
+                <%= distributors[i].address %> -
+                <%= distributors[i].phone %> -
+                <%= distributors[i].appointment %> -
             </li>
         <% } %> 
     </ul>

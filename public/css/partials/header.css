@@ -3,7 +3,7 @@ aside.menu {
     width: 15%;
     float: left;
     position: fixed;
-    background-color: white;
+    background-color: WhiteSmoke;
     z-index: 1000;
     /* #004c99 #003366 #001933 (colores alternativos para el menu)*/
 }
@@ -11,7 +11,7 @@ aside.menu {
 aside.menu div.logo-container {
     width: 100%;
     height: 20%;
-    margin-bottom: 45px;
+    margin-bottom: 25%;
 }
 
 aside.menu div.logo-container img.logo {
@@ -22,16 +22,27 @@ aside.menu div.menu-container {
     text-align: center;
 }
 
-aside.menu div.menu-container a.menu-container_items {
-    display: block;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    font-size: 25px;
-    color: #004c99;
+aside.menu div.menu-container div.button-container {
+    margin-bottom: 33%;
 }
 
-aside.menu div.menu-container a.menu-container_items:last-child {
-    margin-bottom: 0px;
+aside.menu div.menu-container div.button-container button{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+aside.menu div.menu-container a.first-a-header {
+    display: block;
+    margin-bottom: 24%;
+    font-size: 25px;
+    color: black;
+}
+
+aside.menu div.menu-container a.second-a-header {
+    display: block;
+    margin-bottom: 45%;
+    font-size: 25px;
+    color: black;
 }
 
 aside.menu div.social-media_container {
@@ -39,14 +50,543 @@ aside.menu div.social-media_container {
 }
 
 aside.menu div.social-media_container a i {
-    color: #990000;
     font-size: 30px;
 }
 
 aside.menu div.social-media_container a.first-icon i {
-    margin-right: 3.5px;
+    margin-right: 7%;
+    color: #3b5998;
+    background-color: whitesmoke;
+    padding: 2% 3%;
+    border-radius: 5px;
 }
 
 aside.menu div.social-media_container a.second-icon i {
-    margin-left: 3.5px;
+    margin-right: 7%;
+    color: white;
+    background: #f09433; 
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    padding: 2% 3%;
+    border-radius: 5px;
+}
+
+.whatsapp {
+    position: fixed;
+    height: 7.6%;
+    width: 3.7%;
+    bottom: 5%;
+    right: 3%;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius: 50px;
+    text-align:center;
+    font-size:30px;
+  }
+  
+  .whatsapp-icon {
+    margin-top: 1%;
+  }
+
+@media (max-width: 1440px) {
+    aside.menu {
+        height: 100%;
+        width: 15%;
+        float: left;
+        position: fixed;
+        background-color: WhiteSmoke;
+        z-index: 1000;
+        /* #004c99 #003366 #001933 (colores alternativos para el menu)*/
+    }
+    
+    aside.menu div.logo-container {
+        width: 100%;
+        height: 20%;
+        margin-bottom: 25%;
+    }
+    
+    aside.menu div.logo-container img.logo {
+        width: 100%;
+    }
+    
+    aside.menu div.menu-container {
+        text-align: center;
+    }
+    
+    aside.menu div.menu-container div.button-container {
+        margin-bottom: 33%;
+    }
+    
+    aside.menu div.menu-container div.button-container button{
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+    
+    aside.menu div.menu-container a.first-a-header {
+        display: block;
+        margin-bottom: 24%;
+        font-size: 25px;
+        color: black;
+    }
+    
+    aside.menu div.menu-container a.second-a-header {
+        display: block;
+        margin-bottom: 30%;
+        font-size: 25px;
+        color: black;
+    }
+    
+    aside.menu div.social-media_container {
+        text-align: center;
+    }
+    
+    aside.menu div.social-media_container a i {
+        font-size: 30px;
+    }
+    
+    aside.menu div.social-media_container a.first-icon i {
+        margin-right: 7%;
+        color: #3b5998;
+        background-color: whitesmoke;
+        padding: 2% 3%;
+        border-radius: 5px;
+    }
+    
+    aside.menu div.social-media_container a.second-icon i {
+        margin-right: 7%;
+        color: white;
+        background: #f09433; 
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+        padding: 2% 3%;
+        border-radius: 5px;
+    }
+    
+    .whatsapp {
+        position: fixed;
+        height: 8%;
+        width: 3.2%;
+        bottom: 5%;
+        right: 3%;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius: 50px;
+        text-align:center;
+        font-size:30px;
+      }
+      
+      .whatsapp-icon {
+        margin-top: 1%;
+      }
+}
+
+@media (max-width: 1024px) {
+    aside.menu div.menu-container div.button-container button {
+        font-size: 8px;
+    }
+
+    aside.menu div.menu-container a.first-a-header {
+        font-size: 20px;
+    }
+    
+    aside.menu div.menu-container a.second-a-header {
+        font-size: 20px;
+        margin-bottom: 55%;
+    }
+
+    aside.menu div.social-media_container a i {
+        font-size: 25px;
+    }
+
+    .whatsapp {
+        position: fixed;
+        height: 7.8%;
+        width: 3.7%;
+        bottom: 5%;
+        right: 3%;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius: 50px;
+        text-align:center;
+        font-size: 25px;
+      }
+
+      .whatsapp-icon {
+        margin-top: 1%;
+      }
+}
+
+@media (max-width: 768px) {
+    aside.menu div.menu-container div.button-container button {
+        font-size: 8px;
+    }
+
+    aside.menu div.menu-container a.first-a-header {
+        font-size: 16px;
+    }
+    
+    aside.menu div.menu-container a.second-a-header {
+        font-size: 16px;
+        margin-bottom: 20%;
+    }
+
+    aside.menu div.social-media_container {
+        padding-top: 120%;
+    }
+
+    aside.menu div.social-media_container a i {
+        font-size: 25px;
+    }
+
+    .whatsapp {
+        position: fixed;
+        height: 7%;
+        width: 5%;
+        bottom: 3%;
+        right: 3%;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius: 50px;
+        text-align:center;
+        font-size: 27px;
+      }
+
+      .whatsapp-icon {
+        margin-top: 0%;
+        position: relative;
+        bottom: 10%;
+      }
+}
+
+@media (max-width: 425px) {
+
+    aside.menu {
+        height: 15%;
+        width: 100%;
+        position: fixed;
+        background-color: WhiteSmoke;
+        z-index: 1000;
+        /* #004c99 #003366 #001933 (colores alternativos para el menu)*/
+    }
+
+    aside.menu div.logo-container {
+        width: 30%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    aside.menu div.logo-container img.logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    aside.menu div.menu-container {
+        display: inline;
+        text-align: left;
+    }
+
+    aside.menu div.menu-container div.button-container {
+        display: inline;
+        position: absolute;
+        right: 22%;
+        top: 30%;
+        z-index: 1000;
+    }
+
+    aside.menu div.menu-container div.button-container button {
+        font-size: 8px;
+        display: inline;
+    }
+
+    aside.menu div.menu-container a.first-a-header {
+        font-size: 14px;
+        width: 175%;
+        margin-bottom: 0;
+        position: absolute;
+        left: 27%;
+        bottom: 50%;
+
+    }
+    
+    aside.menu div.menu-container a.second-a-header {
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 0;
+        position: absolute;
+        left: 27%;
+        bottom: 20%;
+    }
+
+    aside.menu div.social-media_container {
+        display: inline;
+        position: relative;
+        left: 80%;
+        bottom: 70%;
+    }
+
+    aside.menu div.social-media_container a i {
+        font-size: 25px;
+    }
+
+    aside.menu div.social-media_container a.first-icon i {
+        margin-right: 0;
+        color: #3b5998;
+        background-color: whitesmoke;
+        padding: 1% 2%;
+        border-radius: 5px;
+    }
+    
+    aside.menu div.social-media_container a.second-icon i {
+        margin-right: 0;
+        color: white;
+        background: #f09433; 
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+        padding: 1% 2%;
+        border-radius: 5px;
+    }
+
+    .whatsapp {
+        position: fixed;
+        height: 8%;
+        width: 10%;
+        bottom: 3%;
+        right: 3%;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius: 50px;
+        text-align:center;
+        font-size: 30px;
+      }
+
+      .whatsapp-icon {
+        margin-top: 0%;
+        position: relative;
+        bottom: 11%;
+      }
+}
+
+@media (max-width: 375px) {
+
+    aside.menu {
+        height: 15%;
+        width: 100%;
+        position: fixed;
+        background-color: WhiteSmoke;
+        z-index: 1000;
+        /* #004c99 #003366 #001933 (colores alternativos para el menu)*/
+    }
+
+    aside.menu div.logo-container {
+        width: 30%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    aside.menu div.logo-container img.logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    aside.menu div.menu-container {
+        display: inline;
+        text-align: left;
+    }
+
+    aside.menu div.menu-container div.button-container {
+        display: inline;
+        position: absolute;
+        right: 22%;
+        top: 30%;
+        z-index: 1000;
+    }
+
+    aside.menu div.menu-container div.button-container button {
+        font-size: 6px;
+        display: inline;
+    }
+
+    aside.menu div.menu-container a.first-a-header {
+        font-size: 12px;
+        width: 175%;
+        margin-bottom: 0;
+        position: absolute;
+        left: 27%;
+        bottom: 50%;
+
+    }
+    
+    aside.menu div.menu-container a.second-a-header {
+        font-size: 12px;
+        width: 100%;
+        margin-bottom: 0;
+        position: absolute;
+        left: 27%;
+        bottom: 20%;
+    }
+
+    aside.menu div.social-media_container {
+        display: inline;
+        position: relative;
+        left: 80%;
+        bottom: 65%;
+    }
+
+    aside.menu div.social-media_container a i {
+        font-size: 25px;
+    }
+
+    aside.menu div.social-media_container a.first-icon i {
+        margin-right: 0;
+        color: #3b5998;
+        background-color: whitesmoke;
+        padding: 1% 2%;
+        border-radius: 5px;
+    }
+    
+    aside.menu div.social-media_container a.second-icon i {
+        margin-right: 0;
+        color: white;
+        background: #f09433; 
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+        padding: 0.5% 0.9%;
+        border-radius: 5px;
+    }
+
+    .whatsapp {
+        position: fixed;
+        height: 8%;
+        width: 11%;
+        bottom: 3%;
+        right: 3%;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius: 50px;
+        text-align:center;
+        font-size: 30px;
+      }
+
+      .whatsapp-icon {
+        margin-top: 0%;
+        position: relative;
+        bottom: 12%;
+      }
+}
+
+@media (max-width: 320px) {
+    aside.menu {
+        height: 15%;
+        width: 100%;
+        position: fixed;
+        background-color: WhiteSmoke;
+        z-index: 1000;
+        /* #004c99 #003366 #001933 (colores alternativos para el menu)*/
+    }
+
+    aside.menu div.logo-container {
+        width: 30%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    aside.menu div.logo-container img.logo {
+        width: 100%;
+        height: 100%;
+    }
+
+    aside.menu div.menu-container {
+        display: inline;
+        text-align: left;
+    }
+
+    aside.menu div.menu-container div.button-container {
+        display: inline;
+        position: absolute;
+        right: 22%;
+        top: 30%;
+        z-index: 1000;
+    }
+
+    aside.menu div.menu-container div.button-container button {
+        font-size: 6px;
+        display: inline;
+    }
+
+    aside.menu div.menu-container a.first-a-header {
+        font-size: 14px;
+        width: 30%;
+        margin-bottom: 0;
+        position: absolute;
+        left: 32%;
+        bottom: 42%;
+
+    }
+    
+    aside.menu div.menu-container a.second-a-header {
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 0;
+        position: absolute;
+        left: 32%;
+        bottom: 12%;
+    }
+
+    aside.menu div.social-media_container {
+        display: inline;
+        position: relative;
+        left: 80%;
+        bottom: 65%;
+    }
+
+    aside.menu div.social-media_container a i {
+        font-size: 25px;
+    }
+
+    aside.menu div.social-media_container a.first-icon i {
+        margin-right: 0;
+        color: #3b5998;
+        background-color: whitesmoke;
+        padding: 1% 2%;
+        border-radius: 5px;
+    }
+    
+    aside.menu div.social-media_container a.second-icon i {
+        margin-right: 0;
+        color: white;
+        background: #f09433; 
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+        padding: 0.5% 0.9%;
+        border-radius: 5px;
+    }
+
+    .whatsapp {
+        position: fixed;
+        height: 8%;
+        width: 14%;
+        bottom: 3%;
+        right: 3%;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius: 50px;
+        text-align:center;
+        font-size: 35px;
+      }
+
+      .whatsapp-icon {
+        margin-top: 0%;
+        position: relative;
+        bottom: 18%;
+      }
 }

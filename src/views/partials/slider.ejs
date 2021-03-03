@@ -4,66 +4,15 @@
 
       <div class="col s12">
 
-        <h1 class="center-align titulo">¿Qué se te antoja hoy?</h1>
+        <h1 class="center-align titulo">Bienvenido</h1>
 
         <div class="carousel center-align">
 
-        <% for(let i=0; i<=0; i++) { %> 
+        <% for(let i=0; i<products.length; i++) { %> 
 
             <div class="carousel-item">
-                <h2 class="subtitulo"><%= products[0].title %> </h2>
-                <div class="linea-division"></div>
-                <p class="sabor">Precio: $<%= products[0].price %> </p> 
-                <p class="sabor">Stock: <%= products[0].stock %> </p>
-                <img src="img-slider/aguaIdealBotellon.jpg"  alt="">
-            </div>
-
-            <div class="carousel-item">
-              <h2 class="subtitulo"><%= products[1].title %> </h2>
-              <div class="linea-division"></div>
-              <p class="sabor">Precio: $<%= products[1].price %> </p> 
-              <p class="sabor">Stock: <%= products[1].stock %> </p>
-              <img src="img-slider/botellonConGrifo.jpg"  alt="">
-            </div>
-
-            <div class="carousel-item">
-              <h2 class="subtitulo"><%= products[2].title %> </h2>
-              <div class="linea-division"></div>
-              <p class="sabor">Precio: $<%= products[2].price %> </p> 
-              <p class="sabor">Stock: <%= products[2].stock %> </p>
-              <img src="img-slider/aguaIdealPersonal.jpg"  alt="">
-            </div>
-
-            <div class="carousel-item">
-              <h2 class="subtitulo"><%= products[3].title %> </h2>
-              <div class="linea-division"></div>
-              <p class="sabor">Precio: $<%= products[3].price %> </p> 
-              <p class="sabor">Stock: <%= products[3].stock %> </p>
-              <img src="img-slider/pulpaNaturalDeAraza.png"  alt="">
-            </div>
-
-            <div class="carousel-item">
-              <h2 class="subtitulo"><%= products[4].title %> </h2>
-              <div class="linea-division"></div>
-              <p class="sabor">Precio: $<%= products[4].price %> </p> 
-              <p class="sabor">Stock: <%= products[4].stock %> </p>
-              <img src="img-slider/pulpaNaturalDeTomate.png"  alt="">
-            </div>
-
-            <div class="carousel-item">
-              <h2 class="subtitulo"><%= products[5].title %> </h2>
-              <div class="linea-division"></div>
-              <p class="sabor">Precio: $<%= products[5].price %> </p> 
-              <p class="sabor">Stock: <%= products[5].stock %> </p>
-              <img src="img-slider/pulpaNaturalDeMora.jpg"  alt="">
-            </div>
-
-            <div class="carousel-item">
-              <h2 class="subtitulo"><%= products[6].title %> </h2>
-              <div class="linea-division"></div>
-              <p class="sabor">Precio: $<%= products[6].price %> </p> 
-              <p class="sabor">Stock: <%= products[6].stock %> </p>
-              <img src="img-slider/pulpaNaturalDeLimonReal.jpg"  alt="">
+              <h2 class="subtitulo"><%= products[i].title %> </h2>
+              <img src="img-slider/<%= products[i].img_slider %> "  alt="">
             </div>
 
         <% } %>

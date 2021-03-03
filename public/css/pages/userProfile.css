@@ -1,0 +1,427 @@
+section.userProfile-section {
+    width: 85%;
+    height: 100%;
+    position: relative;
+    left: 15%;
+    background-color: #acbccc;
+}
+
+div.up-position {
+    display: block;
+    width: 100%;
+    padding-top: 5%;
+}
+
+h1.userProfile-h1 {
+    font-size: 40px;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+div.userList {
+    font-size: 25px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+div.userList ul.upul li.upli {
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+div.up-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+div.up-buttons a.up-edit {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+div.up-buttons button.up-button-edit {
+    font-size: 20px;
+    background-color: transparent;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid;
+    padding: 3px 1px 3px 1px;
+    cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+    section.userProfile-section {
+        width: 85%;
+        height: 100%;
+        position: relative;
+        left: 15%;
+        background-color: #acbccc;
+    }
+    
+    div.up-position {
+        display: block;
+        width: 100%;
+        padding-top: 4%;
+    }
+    
+    h1.userProfile-h1 {
+        font-size: 40px;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 3%;
+        text-align: center;
+    }
+    
+    div.userList {
+        font-size: 25px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    div.userList ul.upul li.upli {
+        list-style: none;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+    
+    div.up-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        width: 25%;
+        margin: 0 auto;
+        margin-top: 2%;
+    }
+    
+    div.up-buttons a.up-edit {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    
+    div.up-buttons button.up-button-edit {
+        font-size: 20px;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        padding: 3px 1px 3px 1px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1024px) {
+    section.userProfile-section {
+        width: 85%;
+        height: 100%;
+        position: relative;
+        left: 15%;
+        background-color: #acbccc;
+    }
+    
+    div.up-position {
+        display: block;
+        width: 100%;
+        padding-top: 7%;
+    }
+    
+    h1.userProfile-h1 {
+        font-size: 30px;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 3%;
+        text-align: center;
+    }
+    
+    div.userList {
+        font-size: 22px;
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    div.userList ul.upul li.upli {
+        list-style: none;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+    
+    div.up-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        width: 25%;
+        margin: 0 auto;
+        margin-top: 2%;
+    }
+    
+    div.up-buttons a.up-edit {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    
+    div.up-buttons button.up-button-edit {
+        font-size: 18px;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        padding: 3px 1px 3px 1px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    section.userProfile-section {
+        width: 85%;
+        height: 100%;
+        position: relative;
+        left: 15%;
+        background-color: #acbccc;
+    }
+    
+    div.up-position {
+        display: block;
+        width: 100%;
+        padding-top: 7%;
+    }
+    
+    h1.userProfile-h1 {
+        font-size: 35px;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 3%;
+        text-align: center;
+    }
+    
+    div.userList {
+        font-size: 25px;
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    div.userList ul.upul li.upli {
+        list-style: none;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+    
+    div.up-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        width: 35%;
+        margin: 0 auto;
+        margin-top: 2%;
+    }
+    
+    div.up-buttons a.up-edit {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    
+    div.up-buttons button.up-button-edit {
+        font-size: 18px;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        padding: 3px 1px 3px 1px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 425px) {
+    section.userProfile-section {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 15%;
+        left: 0%;
+        background-color: #acbccc;
+    }
+    
+    div.up-position {
+        display: block;
+        width: 100%;
+        padding-top: 5%;
+    }
+    
+    h1.userProfile-h1 {
+        font-size: 25px;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+    
+    div.userList {
+        font-size: 18px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    div.userList ul.upul li.upli {
+        list-style: none;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+    
+    div.up-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        width: 45%;
+        margin: 0 auto;
+        margin-top: 15%;
+    }
+    
+    div.up-buttons a.up-edit {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    
+    div.up-buttons button.up-button-edit {
+        font-size: 14px;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        padding: 3px 1px 3px 1px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 375px) {
+    section.userProfile-section {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 15%;
+        left: 0%;
+        background-color: #acbccc;
+    }
+    
+    div.up-position {
+        display: block;
+        width: 100%;
+        padding-top: 5%;
+    }
+    
+    h1.userProfile-h1 {
+        font-size: 23px;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+    
+    div.userList {
+        font-size: 18px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    div.userList ul.upul li.upli {
+        list-style: none;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+    
+    div.up-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 20%;
+    }
+    
+    div.up-buttons a.up-edit {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    
+    div.up-buttons button.up-button-edit {
+        font-size: 14px;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        padding: 3px 1px 3px 1px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 320px) {
+    section.userProfile-section {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 15%;
+        left: 0%;
+        background-color: #acbccc;
+    }
+    
+    div.up-position {
+        display: block;
+        width: 100%;
+        padding-top: 5%;
+    }
+    
+    h1.userProfile-h1 {
+        font-size: 21px;
+        width: 85%;
+        margin: 0 auto;
+        margin-bottom: 20%;
+        text-align: center;
+    }
+    
+    div.userList {
+        font-size: 16px;
+        width: 85%;
+        margin: 0 auto;
+    }
+    
+    div.userList ul.upul li.upli {
+        list-style: none;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+    
+    div.up-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 24%;
+    }
+    
+    div.up-buttons a.up-edit {
+        flex-basis: 0;
+        flex-grow: 1;
+    }
+    
+    div.up-buttons button.up-button-edit {
+        font-size: 14px;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        padding: 3px 1px 3px 1px;
+        cursor: pointer;
+    }
+}

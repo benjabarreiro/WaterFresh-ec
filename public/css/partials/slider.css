@@ -1,29 +1,17 @@
-.titulo {
-    font-size: 40px;
-    font-family: 'Dancing Script', cursive;
-    margin-top: 30px;
-    margin-bottom: 30px;
+div.container div.row div.col h1.titulo {
+    font-size: 100px;
+    font-family: 'Roboto';
     color: black;
-    -webkit-text-stroke: 0.5px white
 }
 
 .subtitulo {
     margin: 0;
     color: #000;
+    background-color: WhiteSmoke;
     display: inline;
-    font-size: 50px;
+    font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
-}
-
-.sabor { 
-    color: #fff;
-    margin: 7px 0;
-    font-size: 50px;
-    font-weight: 600;
-    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
-    font-family: 'Dancing Script', cursive;
-    margin-top: 0;
 }
 
 .linea-division {
@@ -35,7 +23,8 @@
 /*    Materialize Styles     */
 
 .carousel {
-    min-height: 400px;
+    max-height: 67%;
+    margin: 0;
 }
 
 .carousel .carousel-item {
@@ -44,8 +33,8 @@
     justify-content: center;
     align-items: center;
     user-select: none;
-    width: 400px;
-    height: 400px;
+    width: 26%;
+    height: 85%;
 }
 
 .carousel .carousel-item img {
@@ -62,6 +51,183 @@
 .carousel .indicators .indicator-item {
     border-radius: 0;
     transform: rotate(45deg);
-    margin: 0 15px;
+    margin: 0 1.3%;
     background: #36221c;
+}
+
+@media (max-width: 1024px) {
+    
+    div.container {
+        width: 90%;
+        margin: 0;
+        padding: 0;
+    }
+
+    div.container div.row div.col h1.titulo {
+        font-size: 90px;
+    }
+
+    .subtitulo {
+        font-size: 15px;
+    }
+
+    /* MATERIALIZE STYLES */
+
+    .col {
+        height: 400px;
+    }
+
+    .carousel {
+        max-height: 61%;
+        margin: 0;
+    }
+    .carousel .carousel-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        width: 29%;
+        height: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    div.container {
+        width: 90%;
+    }
+
+    div.container div.row div.col h1.titulo {
+        font-size: 80px;
+    }
+
+    .subtitulo {
+        font-size: 12px;
+    }
+
+    /* MATERIALIZE STYLES */
+
+    .col, .s12 {
+        height: 330px;
+        padding: 0;
+    }
+
+    .carousel {
+        max-height: 70%;
+        margin: 0;
+    }
+    .carousel .carousel-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        width: 33%;
+        height: 85%;
+    }
+}
+
+@media (max-width: 425px) {
+    
+    div.container {
+        width: 90%;
+    }
+
+    div.container div.row div.col h1.titulo {
+        font-size: 70px;
+    }
+
+    .subtitulo {
+        font-size: 12px;
+    }
+
+    /* MATERIALIZE STYLES */
+
+    .col {
+        height: 340px;
+    }
+
+    .carousel {
+        max-height: 69%;
+        margin: 0;
+    }
+    .carousel .carousel-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        width: 59%;
+        height: 78%;
+    }
+}
+
+@media (max-width: 375px) {
+    
+    div.container {
+        width: 90%;
+    }
+
+    div.container div.row div.col h1.titulo {
+        font-size: 70px;
+    }
+
+    .subtitulo {
+        font-size: 12px;
+    }
+
+    /* MATERIALIZE STYLES */
+
+    .col {
+        height: 340px;
+    }
+
+    .carousel {
+        max-height: 65%;
+        margin: 0;
+    }
+    .carousel .carousel-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        width: 60%;
+        height: 80%;
+    }
+}
+
+@media (max-width: 320px) {
+    div.container {
+        width: 90%;
+    }
+
+    div.container div.row div.col h1.titulo {
+        font-size: 50px;
+    }
+
+    .subtitulo {
+        font-size: 12px;
+    }
+
+    /* MATERIALIZE STYLES */
+
+    .col {
+        height: 270px;
+    }
+
+    .carousel {
+        max-height: 75%;
+        margin: 0;
+    }
+    .carousel .carousel-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        width: 70%;
+        height: 90%;
+    }
 }

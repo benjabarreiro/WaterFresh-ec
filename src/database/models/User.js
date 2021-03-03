@@ -37,6 +37,11 @@ module.exports = (sequelize, dataTypes) => {
         },
         phone: {
             type: dataTypes.STRING(13),
+            defaultValue: 0
+        },
+        admin: {
+            type: dataTypes.BOOLEAN(1),
+            defaultValue: 0
         }
     };
     let config = {
@@ -52,7 +57,7 @@ module.exports = (sequelize, dataTypes) => {
     User.associate = function(models){
 
         User.belongsToMany(models.Products, {
-            as: 'products_shooping_cart',
+            as: 'products_shopping_cart',
             through: 'products_users',
             foreignKey: 'id_user',
             otherKey: 'id_product',

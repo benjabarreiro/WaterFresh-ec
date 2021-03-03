@@ -1,0 +1,385 @@
+section.userProfile-section {
+    width: 85%;
+    height: 100%;
+    position: relative;
+    left: 15%;
+    background-color: #acbccc;
+}
+
+form.form-edit-up, h1.edit-up-h1 {
+    width: 40%;
+    margin: 0 auto;
+}
+
+h1.edit-up-h1 {
+    padding-top: 1%;
+    margin-bottom: 1%;
+    font-size: 30px;
+    text-align: center;
+}
+
+form.form-edit-up label.upEdit-label {
+    color: black;
+    font-size: 18px;
+    margin: 0px;
+}
+
+form.form-edit-up input.upEdit-input {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    height: 3rem;
+    margin: 0px;
+}
+
+form.form-edit-up div.button-edit-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form.form-edit-up div.button-edit-container button.up-button-edit {
+    margin: 0 auto;
+    font-size: 15px;
+    margin-top: 3%;
+    background-color: transparent;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid;
+    padding: 3px 1px 3px 1px;
+    cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+    section.userProfile-section {
+        width: 85%;
+        height: 100%;
+        position: relative;
+        left: 15%;
+        background-color: #acbccc;
+    }
+    
+    form.form-edit-up, h1.edit-up-h1 {
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    h1.edit-up-h1 {
+        padding-top: 1%;
+        margin-bottom: 0%;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    form.form-edit-up label.upEdit-label {
+        color: black;
+        font-size: 17px;
+        margin: 0px;
+    }
+    
+    form.form-edit-up input.upEdit-input {
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 17px;
+        height: 2.9rem;
+        margin: 0px;
+    }
+    
+    form.form-edit-up div.button-edit-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    form.form-edit-up div.button-edit-container button.up-button-edit {
+        margin: 0 auto;
+        font-size: 15px;
+        margin-top: 3%;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        padding: 3px 1px 3px 1px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1024px) {
+    section.userProfile-section {
+        width: 85%;
+        height: 100%;
+        position: relative;
+        left: 15%;
+        background-color: #acbccc;
+    }
+    
+    form.form-edit-up, h1.edit-up-h1 {
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    h1.edit-up-h1 {
+        padding-top: 1%;
+        margin-bottom: 0%;
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    form.form-edit-up label.upEdit-label {
+        color: black;
+        font-size: 15px;
+        margin: 0px;
+    }
+    
+    form.form-edit-up input.upEdit-input {
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 15px;
+        height: 2.7rem;
+        margin: 0px;
+    }
+    
+    form.form-edit-up div.button-edit-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    form.form-edit-up div.button-edit-container button.up-button-edit {
+        margin: 0 auto;
+        font-size: 15px;
+        margin-top: 3%;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        padding: 3px 1px 3px 1px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 768px) {
+    section.userProfile-section {
+        width: 85%;
+        height: 100%;
+        position: relative;
+        left: 15%;
+        background-color: #acbccc;
+    }
+    
+    form.form-edit-up, h1.edit-up-h1 {
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    h1.edit-up-h1 {
+        padding-top: 1%;
+        margin-bottom: 0%;
+        font-size: 26px;
+        text-align: center;
+    }
+    
+    form.form-edit-up label.upEdit-label {
+        color: black;
+        font-size: 15px;
+        margin: 0px;
+    }
+    
+    form.form-edit-up input.upEdit-input {
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 15px;
+        height: 2.7rem;
+        margin: 0px;
+    }
+    
+    form.form-edit-up div.button-edit-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    form.form-edit-up div.button-edit-container button.up-button-edit {
+        margin: 0 auto;
+        font-size: 15px;
+        margin-top: 3%;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        padding: 3px 1px 3px 1px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 425px) {
+    section.userProfile-section {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 15%;
+        left: 0%;
+        background-color: #acbccc;
+    }
+    
+    form.form-edit-up, h1.edit-up-h1 {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    h1.edit-up-h1 {
+        padding-top: 1%;
+        margin-bottom: 0%;
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    form.form-edit-up label.upEdit-label {
+        color: black;
+        font-size: 14px;
+        margin: 0px;
+    }
+    
+    form.form-edit-up input.upEdit-input {
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 14px;
+        height: 2.6rem;
+        margin: 0px;
+    }
+    
+    form.form-edit-up div.button-edit-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    form.form-edit-up div.button-edit-container button.up-button-edit {
+        margin: 0 auto;
+        font-size: 15px;
+        margin-top: 3%;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        padding: 3px 1px 3px 1px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 375px) {
+    section.userProfile-section {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 15%;
+        left: 0%;
+        background-color: #acbccc;
+    }
+    
+    form.form-edit-up, h1.edit-up-h1 {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    h1.edit-up-h1 {
+        padding-top: 1%;
+        margin-bottom: 0%;
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    form.form-edit-up label.upEdit-label {
+        color: black;
+        font-size: 14px;
+        margin: 0px;
+    }
+    
+    form.form-edit-up input.upEdit-input {
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 14px;
+        height: 2.6rem;
+        margin: 0px;
+    }
+    
+    form.form-edit-up div.button-edit-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    form.form-edit-up div.button-edit-container button.up-button-edit {
+        margin: 0 auto;
+        font-size: 15px;
+        margin-top: 3%;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        padding: 3px 1px 3px 1px;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 320px) {
+    section.userProfile-section {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 15%;
+        left: 0%;
+        background-color: #acbccc;
+    }
+    
+    form.form-edit-up, h1.edit-up-h1 {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    h1.edit-up-h1 {
+        padding-top: 1%;
+        margin-bottom: 0%;
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    form.form-edit-up label.upEdit-label {
+        color: black;
+        font-size: 14px;
+        margin: 0px;
+    }
+    
+    form.form-edit-up input.upEdit-input {
+        color: black;
+        background-color: white;
+        border-radius: 5px;
+        border: none;
+        font-size: 14px;
+        height: 2.6rem;
+        margin: 0px;
+    }
+    
+    form.form-edit-up div.button-edit-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    form.form-edit-up div.button-edit-container button.up-button-edit {
+        margin: 0 auto;
+        font-size: 15px;
+        margin-top: 3%;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        padding: 3px 1px 3px 1px;
+        cursor: pointer;
+    }
+}

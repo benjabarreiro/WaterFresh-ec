@@ -8,23 +8,13 @@ module.exports = {
     },
     new: function(req, res) {
         db.Distributors.create({
-            first_name: req.body.first_name,
-            last_name: req.body.last_name,
-            username: req.body.username,
+            company_name: req.body.company_name,
             email: req.body.email,
-            password: bcrypt.hashSync(req.body.password, 10),
-            repassword: bcrypt.hashSync(req.body.repassword, 10),
-            address: req.body.address,
-            phone: req.body.phone
+            phone: req.body.phone,
+            appointment: req.body.appointment
         });
 
-        res.redirect('/distributors/list');
-    },
-    list: function(req, res) {
-        db.Distributors.findAll()
-            .then(function(distributors) {
-                res.render('distributorsList', {distributors:distributors});
-            })
+        res.redirect('/');
     },
     profile: function(req, res) {
         db.Distributors.findByPk(req.params.id)
@@ -40,12 +30,8 @@ module.exports = {
     },
     updated: function(req, res) {
         db.Distributors.update({
-            first_name: req.body.first_name,
-            last_name: req.body.last_name,
-            username: req.body.username,
+            company_name: req.body.company_name,
             email: req.body.email,
-            password: bcrypt.hashSync(req.body.password, 10),
-            repassword: bcrypt.hashSync(req.body.repassword, 10),
             address: req.body.address,
             phone: req.body.phone
         },

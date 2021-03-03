@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 
-// Modueles
+// Modules
 const path = require('path');
 const livereload = require('livereload');
 const connectLivereload = require('connect-Livereload');
@@ -37,18 +37,16 @@ app.set('views', path.join(__dirname, 'views'));
 
 
 // Routes Require
-const mainRouter = require('./routes/routes');
 const productsRouter = require('./routes/products');
 const usersRouter = require('./routes/users');
 const distributorsRouter = require('./routes/distributors');
-const discountsRouter = require('./routes/discounts');
+const adminsRouter = require('./routes/admins');
 
 
 // Routes Usage
 app.use('/', productsRouter);
 app.use('/users', usersRouter);
 app.use('/distributors', distributorsRouter);
-app.use('/discounts', discountsRouter);
-app.use('/', mainRouter);
+app.use('/admins', adminsRouter);
 
 app.listen(3000, () => console.log('Server running in port 3000'));
