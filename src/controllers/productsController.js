@@ -36,7 +36,7 @@ module.exports = {
     detail: function(req, res) {
         db.Products.findByPk(req.params.id)
             .then(function(product) {
-                res.render('productDetail', {product:product});
+                res.render('productDetail.ejs', {product:product});
             })
     }
 }

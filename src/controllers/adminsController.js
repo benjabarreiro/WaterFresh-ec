@@ -25,19 +25,19 @@ module.exports = {
     distributorsList: function(req, res) {
         db.Distributors.findAll()
             .then(function(distributors) {
-                res.render('distributorsList', {distributors:distributors});
+                res.render('distributorsList.ejs', {distributors:distributors});
             })
     },
     usersList: function(req, res) {
         db.Users.findAll()
             .then(function(users) {
-                res.render('userList', {users:users});
+                res.render('userList.ejs', {users:users});
             })
     },
     newAdmin: function(req, res) {
         db.Users.findByPk(req.params.id)
             .then(function(newAdmin) {
-                res.render('newAdmin', {newAdmin:newAdmin});
+                res.render('newAdmin.ejs', {newAdmin:newAdmin});
             })
     },
     saveNewAdmin: function(req, res) {
@@ -53,7 +53,7 @@ module.exports = {
         res.redirect('/admins/usersList');
     },
     create: function(req, res) {
-        res.render('createProduct');
+        res.render('createProduct.ejs');
     },
     saved: function(req, res, next) {
         db.Products.create({
@@ -69,7 +69,7 @@ module.exports = {
     edit: function(req, res) {
         db.Products.findByPk(req.params.id)
          .then(function(product) {
-             res.render('productEdit', {product:product});
+             res.render('productEdit.ejs', {product:product});
          }) 
      },
      updated: function(req, res) {

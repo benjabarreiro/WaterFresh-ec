@@ -7,7 +7,7 @@ let {check, validationResult, body} = require('express-validator');
 
 module.exports = {
     signUpPage: function(req, res) {
-        res.render('signUp');
+        res.render('signUp.ejs');
     },
     newUser: function(req, res) {
         let errors = validationResult(req);
@@ -28,7 +28,7 @@ module.exports = {
         }
     },
     logIn: function(req, res) {
-        res.render('userLogIn');
+        res.render('userLogIn.ejs');
     },
     validationLogIn: function(req, res, next) {
         let errors = validationResult(req);
@@ -48,7 +48,7 @@ module.exports = {
                     }
                     return res.redirect('/');
                 }
-                return res.render('userLogIn', {
+                return res.render('userLogIn.ejs', {
                     errors: [
                         {msg: 'Credenciales inválidas'}
                     ]
@@ -66,13 +66,13 @@ module.exports = {
     profile: function(req, res) {
         db.Users.findByPk(req.params.id)
             .then(function(user) {
-                res.render("userProfile", {user:user});
+                res.render("userProfile.ejs", {user:user});
             })
     },
     edit: function(req, res) {
         db.Users.findByPk(req.params.id)
             .then(function(user) {
-                res.render("userProfileEdit", {user:user});
+                res.render("userProfileEdit.ejs", {user:user});
             })
     },
     updated: function(req, res) {

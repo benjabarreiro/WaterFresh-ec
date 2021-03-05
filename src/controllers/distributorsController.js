@@ -4,7 +4,7 @@ const db = require('../database/models');
 
 module.exports = {
     register: function(req, res) {
-        res.render('distributor');
+        res.render('distributor.ejs');
     },
     new: function(req, res) {
         db.Distributors.create({
@@ -19,13 +19,13 @@ module.exports = {
     profile: function(req, res) {
         db.Distributors.findByPk(req.params.id)
             .then(function(distributor) {
-                res.render('distributorProfile', {distributor:distributor});
+                res.render('distributorProfile.ejs', {distributor:distributor});
             })
     },
     edit: function(req, res) {
         db.Distributors.findByPk(req.params.id)
             .then(function(distributor) {
-                res.render('distributorProfileEdit', {distributor:distributor});
+                res.render('distributorProfileEdit.ejs', {distributor:distributor});
             })
     },
     updated: function(req, res) {
