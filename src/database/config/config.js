@@ -4,7 +4,7 @@ module.exports = {
     "password": "d9967d2b",
     "database": "heroku_729ca7676ec025d",
     "host": "us-cdbr-east-03.cleardb.com",
-    "port": 8889,
+    "port": 3306,
     "dialect": "mysql",
     "timezone": "-03:00"
   },
@@ -13,6 +13,7 @@ module.exports = {
     "password": "d9967d2b",
     "database": "heroku_729ca7676ec025d",
     "host": "us-cdbr-east-03.cleardb.com",
+    "port": 3306,
     "dialect": "mysql",
     "timezone": "-03:00"
   },
@@ -21,6 +22,7 @@ module.exports = {
     "password": "d9967d2b",
     "database": "heroku_729ca7676ec025d",
     "host": "us-cdbr-east-03.cleardb.com",
+    "port": 3306,
     "dialect": "mysql",
     "timezone": "-03:00"
   }
