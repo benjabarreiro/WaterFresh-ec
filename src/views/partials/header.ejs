@@ -14,9 +14,6 @@
                 <% } else { %> 
                 <li><a class="dropdown-item" href="/users/logIn">Iniciar Sesión</a></li>
                 <li><a class="dropdown-item" href="/users/registration">Registrarse</a></li>
-                <% for(let i = 0; user.length; i++) { %> 
-                <li><a class="dropdown-item" href="/users/profile/<%= user.id %>  ">Ir al Perfil</a></li>
-                <% } %> 
                 <% } %> 
             </ul>
         </div>
