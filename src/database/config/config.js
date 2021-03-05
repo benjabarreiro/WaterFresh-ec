@@ -1,26 +1,26 @@
 module.exports = {
   "development": {
-    "username": "bf6b6448175c39",
-    "password": "d9967d2b",
-    "database": "heroku_729ca7676ec025d",
+    "username": "bef9c91a1eba82",
+    "password": "53bf94c1",
+    "database": "heroku_f7de784a4d84551",
     "host": "us-cdbr-east-03.cleardb.com",
     "port": 3306,
     "dialect": "mysql",
     "timezone": "-03:00"
   },
   "test": {
-    "username": "bf6b6448175c39",
-    "password": "d9967d2b",
-    "database": "heroku_729ca7676ec025d",
+    "username": "bef9c91a1eba82",
+    "password": "53bf94c1",
+    "database": "heroku_f7de784a4d84551",
     "host": "us-cdbr-east-03.cleardb.com",
     "port": 3306,
     "dialect": "mysql",
     "timezone": "-03:00"
   },
   "production": {
-    "username": "bf6b6448175c39",
-    "password": "d9967d2b",
-    "database": "heroku_729ca7676ec025d",
+    "username": "bef9c91a1eba82",
+    "password": "53bf94c1",
+    "database": "heroku_f7de784a4d84551",
     "host": "us-cdbr-east-03.cleardb.com",
     "port": 3306,
     "dialect": "mysql",
