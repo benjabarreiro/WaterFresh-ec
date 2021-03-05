@@ -2,6 +2,9 @@
   "name": "waterfresh",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "14.x"
+  },
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js"
@@ -11,7 +14,7 @@
     "url": "git+https://github.com/benjabarreiro/waterFresh.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/benjabarreiro/waterFresh/issues"
   },
@@ -30,12 +33,16 @@
     "multer": "^1.4.2",
     "mysql2": "^2.2.5",
     "nodemon": "^2.0.6",
-    "passport": "^0.4.1",
     "sequelize": "^6.3.5",
     "sequelize-cli": "^6.2.0"
   },
-  "engines": {
-    "node": "0.10.x",
-    "npm": "1.2.x"
-  }
+  "devDependencies": {
+    "got": "^11.3.0",
+    "tape": "^4.7.0"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ]
 }
