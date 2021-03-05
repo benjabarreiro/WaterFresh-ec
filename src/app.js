@@ -5,7 +5,6 @@ const app = express();
 // Modules
 const path = require('path');
 const livereload = require('livereload');
-const connectLivereload = require('connect-Livereload');
 const bodyparser = require('body-parser');
 const methodOverride = require('method-override');
 const session = require('express-session');
