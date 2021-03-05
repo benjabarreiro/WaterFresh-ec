@@ -49,4 +49,4 @@ app.use('/users', usersRouter);
 app.use('/distributors', distributorsRouter);
 app.use('/admins', adminsRouter);
 
-app.listen(process.env.PORT || 3000, () => console.log('Server running in port 3000'));
+app.listen(process.env.PORT || 3000, '0.0.0.0', () => console.log('Server running in port 3000'));
