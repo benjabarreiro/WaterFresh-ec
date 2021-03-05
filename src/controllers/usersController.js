@@ -28,7 +28,7 @@ module.exports = {
         }
     },
     logIn: function(req, res) {
-        res.render('userLogIn.ejs');
+        res.render('userLogin.ejs');
     },
     validationLogIn: function(req, res, next) {
         let errors = validationResult(req);
@@ -48,14 +48,14 @@ module.exports = {
                     }
                     return res.redirect('/');
                 }
-                return res.render('userLogIn.ejs', {
+                return res.render('userLogin.ejs', {
                     errors: [
                         {msg: 'Credenciales inválidas'}
                     ]
                 })
             })
         } else {
-            res.render('userLogIn.ejs', {errors: errors.errors});
+            res.render('userLogin.ejs', {errors: errors.errors});
         }
     },
     logout: function(req, res) {
