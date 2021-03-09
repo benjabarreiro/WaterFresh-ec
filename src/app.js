@@ -40,6 +40,7 @@ const productsRouter = require('./routes/products');
 const usersRouter = require('./routes/users');
 const distributorsRouter = require('./routes/distributors');
 const adminsRouter = require('./routes/admins');
+const landingPageRouter = require('./routes/landingPage');
 
 
 // Routes Usage
@@ -47,6 +48,7 @@ app.use('/', productsRouter);
 app.use('/users', usersRouter);
 app.use('/distributors', distributorsRouter);
 app.use('/admins', adminsRouter);
+app.use('/landingPage', landingPageRouter);
 
 const PORT = process.env.PORT || 5000
 

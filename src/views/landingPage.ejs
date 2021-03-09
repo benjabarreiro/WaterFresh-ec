@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head.ejs') %> 
+<body>
+    <section class="product_sectionlp">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-6">
+                    <div class="videoContainer">
+                        <video controls="true" src="/video/waterFresh.mp4"></video>
+                    </div>
+                </div>
+
+                <div class="col-6 form-container-lp">
+                    <form class="landingPage-form" action="/landingPage/display" method="POST">
+                        <div class="h2-lp-container">
+                            <h2 class="datalp">Dejanos tus datos</h2>
+                        </div>
+                        <input class="input-lp" type="email" placeholder="Introduzca su email..." name="email">
+                        <input class="input-lp" type="text" placeholder="Introduzca su nombre..." name="name">
+                        <input class="input-lp" type="text" placeholder="Introduzca su número de teléfono..." name="phone">
+                        <div class="button-form-container-lp">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+        <h2 class="ourProductslp">Nuestros Productos</h2>
+
+        <div class="container">
+
+            <div class="row">
+
+                <% for(let i=0; i<products.length; i++) { %> 
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+                        <div class="backgroundlp">
+                            <div class="img-container_product1lp">
+                                <img src="/img-db/<%= products[i].img_url %> " alt="">
+                            </div>
+                            <div class="product-infolp">
+                                <div class="span-containerlp">
+                                    <span class="title-containerlp"> <%= products[i].title %> </span>
+                                    <div>
+                                        <span class="price-containerlp"> $<%= products[i].price %> </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <% } %> 
+            </div>
+        </div>
+    </section>
+</body>
+</html>
