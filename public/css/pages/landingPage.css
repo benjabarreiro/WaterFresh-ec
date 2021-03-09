@@ -70,7 +70,7 @@ form.landingPage-form div.button-form-container-lp button {
 }
 
 h2.ourProductslp {
-    margin-left: 1%;
+    margin-left: 10%;
     margin-bottom: 2%;
     font-weight: 700;
     font-size: 30px;
@@ -118,4 +118,778 @@ div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp span.price
     font-size: 18px;
     font-weight: 700;
     color: black;
+}
+
+@media (max-width: 1440px) {
+    section.product_sectionlp {
+        width: 100%;
+        background-image: url('../../images/fondo4.jpg');
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+    
+    div.videoContainer {
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    div.videoContainer video {
+        width: 100%;
+    }
+    
+    div.form-container-lp {
+        display: flex;
+        justify-content: center;
+    }
+    
+    form.landingPage-form {
+        width: 60%;
+    }
+    
+    form.landingPage-form div.h2-lp-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    form.landingPage-form div.h2-lp-container h2.datalp {
+        margin-left: 1%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        font-weight: 700;
+        font-size: 30px;
+        color: white;
+    }
+    
+    form.landingPage-form input.input-lp {
+        display: block;
+        width: 100%;
+        height: 3.6rem;
+        margin-bottom: 8%;
+        font-size: 15px;
+        border-radius: 8px;
+        border: 1px solid black;
+        padding: 0 10px;
+        background-color: white;
+    }
+    
+    form.landingPage-form div.button-form-container-lp {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    form.landingPage-form div.button-form-container-lp button {
+        margin: 0 auto;
+        font-size: 1.6rem;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        padding: 1rem 3rem;
+        cursor: pointer;
+        z-index: 1;
+        background-color: white;
+    }
+    
+    h2.ourProductslp {
+        margin-left: 10%;
+        margin-bottom: 2%;
+        font-weight: 700;
+        font-size: 30px;
+        color: white;
+    }
+    
+    div.col-lg-3 {
+        height: 280px;
+    }
+    
+    div.col-lg-3 div.backgroundlp {
+        background-color: whitesmoke;
+        height: 89%;
+    }
+    
+    div.col-lg-3 div.backgroundlp div.img-container_product1lp {
+        display: inline-flex;
+        min-height: 50%;
+        margin-bottom: 0;
+    }
+    
+    div.col-lg-3 div.backgroundlp div.img-container_product1lp img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+    
+    div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+    
+    div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp span.title-containerlp {
+        line-height: 18px;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+        width: 80%;
+    }
+    
+    div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp span.price-containerlp {
+        line-height: 18px;
+        font-size: 18px;
+        font-weight: 700;
+        color: black;
+    }
+}
+
+@media (max-width: 1024px) {
+    section.product_sectionlp {
+        width: 100%;
+        background-image: url('../../images/fondo4.jpg');
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+
+    section.product_sectionlp div.container {
+        width: 120%;
+        margin-left: 3%;
+    }
+    
+    div.videoContainer {
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    
+    div.videoContainer video {
+        width: 100%;
+    }
+    
+    div.form-container-lp {
+        display: flex;
+        justify-content: center;
+    }
+    
+    form.landingPage-form {
+        width: 60%;
+    }
+    
+    form.landingPage-form div.h2-lp-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    form.landingPage-form div.h2-lp-container h2.datalp {
+        margin-left: 1%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        font-weight: 700;
+        font-size: 30px;
+        color: white;
+    }
+    
+    form.landingPage-form input.input-lp {
+        display: block;
+        width: 100%;
+        height: 3.6rem;
+        margin-bottom: 8%;
+        font-size: 15px;
+        border-radius: 8px;
+        border: 1px solid black;
+        padding: 0 10px;
+        background-color: white;
+    }
+    
+    form.landingPage-form div.button-form-container-lp {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    form.landingPage-form div.button-form-container-lp button {
+        margin: 0 auto;
+        font-size: 1.6rem;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        padding: 1rem 3rem;
+        cursor: pointer;
+        z-index: 1;
+        background-color: white;
+    }
+    
+    h2.ourProductslp {
+        margin-left: 3%;
+        margin-bottom: 2%;
+        font-weight: 700;
+        font-size: 30px;
+        color: white;
+    }
+    
+    section.product_sectionlp div.col-lg-3 {
+        height: 280px;
+    }
+    
+    section.product_sectionlp div.col-lg-3 div.backgroundlp {
+        background-color: whitesmoke;
+        height: 75%;
+    }
+    
+    section.product_sectionlp div.col-lg-3 div.backgroundlp div.img-container_product1lp {
+        display: inline-flex;
+        min-height: 50%;
+        margin-bottom: 0;
+    }
+    
+    section.product_sectionlp div.col-lg-3 div.backgroundlp div.img-container_product1lp img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+    
+    section.product_sectionlp div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+    
+    section.product_sectionlp div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp span.title-containerlp {
+        line-height: 18px;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+        width: 80%;
+    }
+    
+    section.product_sectionlp div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp span.price-containerlp {
+        line-height: 18px;
+        font-size: 18px;
+        font-weight: 700;
+        color: black;
+    }
+}
+
+@media (max-width: 768px) {
+    section.product_sectionlp {
+        width: 100%;
+        background-image: url('../../images/fondo4.jpg');
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+
+    section.product_sectionlp div.container {
+        width: 120%;
+        margin-left: 3%;
+    }
+    
+    div.videoContainer {
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+        padding-bottom: 0%;
+    }
+    
+    div.videoContainer video {
+        width: 100%;
+    }
+    
+    div.form-container-lp {
+        display: flex;
+        justify-content: center;
+    }
+    
+    form.landingPage-form {
+        width: 75%;
+    }
+    
+    form.landingPage-form div.h2-lp-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    form.landingPage-form div.h2-lp-container h2.datalp {
+        margin-left: 1%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        font-weight: 700;
+        font-size: 30px;
+        color: white;
+    }
+    
+    form.landingPage-form input.input-lp {
+        display: block;
+        width: 100%;
+        height: 3.6rem;
+        margin-bottom: 8%;
+        font-size: 15px;
+        border-radius: 8px;
+        border: 1px solid black;
+        padding: 0 10px;
+        background-color: white;
+    }
+    
+    form.landingPage-form div.button-form-container-lp {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    form.landingPage-form div.button-form-container-lp button {
+        margin: 0 auto;
+        font-size: 1.6rem;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        padding: 1rem 3rem;
+        cursor: pointer;
+        z-index: 1;
+        background-color: white;
+    }
+    
+    h2.ourProductslp {
+        margin-left: 3%;
+        margin-bottom: 2%;
+        font-weight: 700;
+        font-size: 30px;
+        color: white;
+    }
+    
+    section.product_sectionlp div.col-md-6 {
+        height: 290px;
+        margin-bottom: 2%;
+    }
+    
+    section.product_sectionlp div.col-md-6 div.backgroundlp {
+        background-color: whitesmoke;
+        height: 100%;
+    }
+    
+    section.product_sectionlp div.col-md-6 div.backgroundlp div.img-container_product1lp {
+        display: inline-flex;
+        min-height: 50%;
+        margin-bottom: 0;
+    }
+    
+    section.product_sectionlp div.col-md-6 div.backgroundlp div.img-container_product1lp img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+    
+    section.product_sectionlp div.col-md-6 div.backgroundlp div.product-infolp div.span-containerlp {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+    
+    section.product_sectionlp div.col-md-6 div.backgroundlp div.product-infolp div.span-containerlp span.title-containerlp {
+        line-height: 18px;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+        width: 80%;
+    }
+    
+    section.product_sectionlp div.col-md-6 div.backgroundlp div.product-infolp div.span-containerlp span.price-containerlp {
+        line-height: 18px;
+        font-size: 18px;
+        font-weight: 700;
+        color: black;
+    }
+}
+
+@media (max-width: 425px) {
+    section.product_sectionlp {
+        width: 100%;
+        background-image: url('../../images/fondo4.jpg');
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+
+    section.product_sectionlp div.container {
+        width: 93%;
+        margin-left: 3%;
+    }
+    
+    div.videoContainer {
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+        padding-bottom: 0%;
+    }
+    
+    div.videoContainer video {
+        width: 100%;
+    }
+    
+    div.form-container-lp {
+        display: flex;
+        justify-content: center;
+    }
+    
+    form.landingPage-form {
+        width: 75%;
+    }
+    
+    form.landingPage-form div.h2-lp-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    form.landingPage-form div.h2-lp-container h2.datalp {
+        margin-left: 1%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        font-weight: 700;
+        font-size: 30px;
+        color: white;
+    }
+    
+    form.landingPage-form input.input-lp {
+        display: block;
+        width: 93%;
+        height: 3.6rem;
+        margin-bottom: 8%;
+        font-size: 15px;
+        border-radius: 8px;
+        border: 1px solid black;
+        padding: 0 10px;
+        background-color: white;
+    }
+    
+    form.landingPage-form div.button-form-container-lp {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    form.landingPage-form div.button-form-container-lp button {
+        margin: 0 auto;
+        font-size: 1.6rem;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        padding: 1rem 3rem;
+        cursor: pointer;
+        z-index: 1;
+        background-color: white;
+    }
+    
+    h2.ourProductslp {
+        margin-left: 3%;
+        margin-bottom: 2%;
+        font-weight: 700;
+        font-size: 30px;
+        color: white;
+    }
+    
+    section.product_sectionlp div.col-12 {
+        height: 290px;
+        margin-bottom: 15%;
+    }
+    
+    section.product_sectionlp div.col-12 div.backgroundlp {
+        background-color: whitesmoke;
+        height: 113%;
+    }
+    
+    section.product_sectionlp div.col-12 div.backgroundlp div.img-container_product1lp {
+        display: inline-flex;
+        min-height: 50%;
+        margin-bottom: 0;
+    }
+    
+    section.product_sectionlp div.col-12 div.backgroundlp div.img-container_product1lp img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+    
+    section.product_sectionlp div.col-12 div.backgroundlp div.product-infolp div.span-containerlp {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+    
+    section.product_sectionlp div.col-12 div.backgroundlp div.product-infolp div.span-containerlp span.title-containerlp {
+        line-height: 18px;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+        width: 80%;
+    }
+    
+    section.product_sectionlp div.col-12 div.backgroundlp div.product-infolp div.span-containerlp span.price-containerlp {
+        line-height: 18px;
+        font-size: 18px;
+        font-weight: 700;
+        color: black;
+    }
+}
+
+@media (max-width: 375px) {
+    section.product_sectionlp {
+        width: 100%;
+        background-image: url('../../images/fondo4.jpg');
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+
+    section.product_sectionlp div.container {
+        width: 93%;
+        margin-left: 3%;
+    }
+    
+    div.videoContainer {
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+        padding-bottom: 0%;
+    }
+    
+    div.videoContainer video {
+        width: 100%;
+    }
+    
+    div.form-container-lp {
+        display: flex;
+        justify-content: center;
+    }
+    
+    form.landingPage-form {
+        width: 75%;
+    }
+    
+    form.landingPage-form div.h2-lp-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    form.landingPage-form div.h2-lp-container h2.datalp {
+        margin-left: 1%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        font-weight: 700;
+        font-size: 30px;
+        color: white;
+    }
+    
+    form.landingPage-form input.input-lp {
+        display: block;
+        width: 93%;
+        height: 3.6rem;
+        margin-bottom: 8%;
+        font-size: 15px;
+        border-radius: 8px;
+        border: 1px solid black;
+        padding: 0 10px;
+        background-color: white;
+    }
+    
+    form.landingPage-form div.button-form-container-lp {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    form.landingPage-form div.button-form-container-lp button {
+        margin: 0 auto;
+        font-size: 1.6rem;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        padding: 1rem 3rem;
+        cursor: pointer;
+        z-index: 1;
+        background-color: white;
+    }
+    
+    h2.ourProductslp {
+        margin-left: 3%;
+        margin-bottom: 2%;
+        font-weight: 700;
+        font-size: 30px;
+        color: white;
+    }
+    
+    section.product_sectionlp div.col-12 {
+        height: 240px;
+        margin-bottom: 15%;
+    }
+    
+    section.product_sectionlp div.col-12 div.backgroundlp {
+        background-color: whitesmoke;
+        height: 120%;
+    }
+    
+    section.product_sectionlp div.col-12 div.backgroundlp div.img-container_product1lp {
+        display: inline-flex;
+        min-height: 50%;
+        margin-bottom: 0;
+    }
+    
+    section.product_sectionlp div.col-12 div.backgroundlp div.img-container_product1lp img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+    
+    section.product_sectionlp div.col-12 div.backgroundlp div.product-infolp div.span-containerlp {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+    
+    section.product_sectionlp div.col-12 div.backgroundlp div.product-infolp div.span-containerlp span.title-containerlp {
+        line-height: 18px;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+        width: 80%;
+    }
+    
+    section.product_sectionlp div.col-12 div.backgroundlp div.product-infolp div.span-containerlp span.price-containerlp {
+        line-height: 18px;
+        font-size: 18px;
+        font-weight: 700;
+        color: black;
+    }
+}
+
+@media (max-width: 320px) {
+    section.product_sectionlp {
+        width: 100%;
+        background-image: url('../../images/fondo4.jpg');
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+
+    section.product_sectionlp div.container {
+        width: 93%;
+        margin-left: 3%;
+    }
+    
+    div.videoContainer {
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+        padding-bottom: 0%;
+    }
+    
+    div.videoContainer video {
+        width: 100%;
+    }
+    
+    div.form-container-lp {
+        display: flex;
+        justify-content: center;
+    }
+    
+    form.landingPage-form {
+        width: 75%;
+    }
+    
+    form.landingPage-form div.h2-lp-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    form.landingPage-form div.h2-lp-container h2.datalp {
+        margin-left: 1%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        font-weight: 700;
+        font-size: 30px;
+        color: white;
+    }
+    
+    form.landingPage-form input.input-lp {
+        display: block;
+        width: 93%;
+        height: 3.6rem;
+        margin-bottom: 8%;
+        font-size: 15px;
+        border-radius: 8px;
+        border: 1px solid black;
+        padding: 0 10px;
+        background-color: white;
+    }
+    
+    form.landingPage-form div.button-form-container-lp {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    form.landingPage-form div.button-form-container-lp button {
+        margin: 0 auto;
+        font-size: 1.6rem;
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+        border: 2px solid;
+        padding: 1rem 3rem;
+        cursor: pointer;
+        z-index: 1;
+        background-color: white;
+    }
+    
+    h2.ourProductslp {
+        margin-left: 3%;
+        margin-top: 20%;
+        margin-bottom: 2%;
+        font-weight: 700;
+        font-size: 30px;
+        color: white;
+    }
+    
+    section.product_sectionlp div.col-12 {
+        height: 220px;
+        margin-bottom: 15%;
+    }
+    
+    section.product_sectionlp div.col-12 div.backgroundlp {
+        background-color: whitesmoke;
+        height: 113%;
+    }
+    
+    section.product_sectionlp div.col-12 div.backgroundlp div.img-container_product1lp {
+        display: inline-flex;
+        min-height: 50%;
+        margin-bottom: 0;
+    }
+    
+    section.product_sectionlp div.col-12 div.backgroundlp div.img-container_product1lp img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+    
+    section.product_sectionlp div.col-12 div.backgroundlp div.product-infolp div.span-containerlp {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 1%;
+        margin-left: 1%;
+    }
+    
+    section.product_sectionlp div.col-12 div.backgroundlp div.product-infolp div.span-containerlp span.title-containerlp {
+        line-height: 18px;
+        font-size: 18px;
+        font-weight: 500;
+        color: black;
+        width: 80%;
+    }
+    
+    section.product_sectionlp div.col-12 div.backgroundlp div.product-infolp div.span-containerlp span.price-containerlp {
+        line-height: 18px;
+        font-size: 18px;
+        font-weight: 700;
+        color: black;
+    }
 }

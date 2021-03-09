@@ -118,7 +118,7 @@ div#detailContainer {
         width: 85%;
         position: relative;
         left: 15%;
-        background-image: url('../../images/montaña-nevada1.webp');
+        background-image: url('../../images/fondo4.jpg');
         background-size: 100% 100%;
         background-attachment: fixed;
     }
@@ -130,15 +130,20 @@ div#detailContainer {
         font-size: 25px;
     }
 
-    div.container {
-        width: 90%;
+    section.products_section div.container {
+        width: 100%;
+        margin-right: 0;
     }
 
-    div.col-lg-3 {
+    section.products_section div.container div.row {
+        margin: 0;
+    }
+
+    section.products_section div.col-lg-3 {
         height: 200px;
     }
 
-    div.col-lg-3 div.background div.product-info div.span-container span.title-container {
+    section.products_section div.col-lg-3 div.background div.product-info div.span-container span.title-container {
         line-height: 18px;
         font-size: 15px;
         font-weight: 500;
@@ -146,7 +151,7 @@ div#detailContainer {
         width: 80%;
     }
     
-    div.col-lg-3 div.background div.product-info div.span-container span.price-container {
+    section.products_section div.col-lg-3 div.background div.product-info div.span-container span.price-container {
         line-height: 18px;
         font-size: 15px;
         font-weight: 700;
@@ -156,12 +161,12 @@ div#detailContainer {
 
 @media (max-width: 768px) {
 
-    div.container {
+    section.products_section div.container {
         width: 90%;
         margin: 0 auto;
     }
 
-    div.col-md-6 {
+    section.products_section div.col-md-6 {
         height: 270px;
     }
 }
@@ -173,7 +178,7 @@ div#detailContainer {
         position: relative;
         left: 0%;
         top: 15%;
-        background-image: url('../../images/montaña-nevada1.webp');
+        background-image: url('../../images/fondo4.jpg');
         background-size: 100% 100%;
         background-attachment: fixed;
     }
@@ -185,16 +190,16 @@ div#detailContainer {
         font-size: 25px;
     }
 
-    div.container {
+    section.products_section div.container {
         width: 67%;
         margin: 0 auto;
     }
 
-    div.col-12 {
+    section.products_section div.col-12 {
         height: 270px;
     }
 
-    div.col-12 div.background div.product-info div.span-container span.title-container {
+    section.products_section div.col-12 div.background div.product-info div.span-container span.title-container {
         line-height: 18px;
         font-size: 14px;
         font-weight: 500;
@@ -202,7 +207,7 @@ div#detailContainer {
         width: 80%;
     }
     
-    div.col-12 div.background div.product-info div.span-container span.price-container {
+    section.products_section div.col-12 div.background div.product-info div.span-container span.price-container {
         line-height: 18px;
         font-size: 14px;
         font-weight: 700;
@@ -217,7 +222,7 @@ div#detailContainer {
         position: relative;
         left: 0%;
         top: 15%;
-        background-image: url('../../images/montaña-nevada1.webp');
+        background-image: url('../../images/fondo4.jpg');
         background-size: 100% 100%;
         background-attachment: fixed;
     }
@@ -229,16 +234,16 @@ div#detailContainer {
         font-size: 25px;
     }
 
-    div.container {
+    section.products_section div.container {
         width: 80%;
         margin: 0 auto;
     }
 
-    div.col-12 {
+    section.products_section div.col-12 {
         height: 280px;
     }
 
-    div.col-12 div.background div.product-info div.span-container span.title-container {
+    section.products_section div.col-12 div.background div.product-info div.span-container span.title-container {
         line-height: 18px;
         font-size: 14px;
         font-weight: 500;
@@ -246,7 +251,7 @@ div#detailContainer {
         width: 80%;
     }
     
-    div.col-12 div.background div.product-info div.span-container span.price-container {
+    section.products_section div.col-12 div.background div.product-info div.span-container span.price-container {
         line-height: 18px;
         font-size: 14px;
         font-weight: 700;
@@ -260,7 +265,7 @@ div#detailContainer {
         position: relative;
         left: 0%;
         top: 15%;
-        background-image: url('../../images/montaña-nevada1.webp');
+        background-image: url('../../images/fondo4.jpg');
         background-size: 100% 100%;
         background-attachment: fixed;
     }
@@ -272,16 +277,16 @@ div#detailContainer {
         font-size: 25px;
     }
 
-    div.container {
+    section.products_section div.container {
         width: 80%;
         margin: 0 auto;
     }
 
-    div.col-12 {
+    section.products_section div.col-12 {
         height: 250px;
     }
 
-    div.col-12 div.background div.product-info div.span-container span.title-container {
+    section.products_section div.col-12 div.background div.product-info div.span-container span.title-container {
         line-height: 18px;
         font-size: 14px;
         font-weight: 500;
@@ -289,7 +294,7 @@ div#detailContainer {
         width: 80%;
     }
     
-    div.col-12 div.background div.product-info div.span-container span.price-container {
+    section.products_section div.col-12 div.background div.product-info div.span-container span.price-container {
         line-height: 18px;
         font-size: 14px;
         font-weight: 700;
