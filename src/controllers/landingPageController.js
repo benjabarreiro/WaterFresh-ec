@@ -17,5 +17,11 @@ module.exports = {
         });
 
         res.redirect('/');
+    },
+    data: function(req, res) {
+        db.LandingPage.findAll()
+            .then(function(data) {
+                res.render('landingPageData', {data: data});
+            });
     }
 }
