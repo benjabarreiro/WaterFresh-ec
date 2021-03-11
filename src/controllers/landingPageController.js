@@ -13,16 +13,6 @@ module.exports = {
     },
     submit: function(req, res) {
 
-        let landingPage = {
-            email: req.body.email,
-            name: req.body.name,
-            phone: req.body.phone
-        }
-
-        let landingPageJSON = JSON.stringify(landingPage);
-
-        fs.writeFileSync('landingPage.json', landingPageJSON);
-
         db.LandingPage.create({
             email: req.body.email,
             name: req.body.name,
@@ -35,6 +25,12 @@ module.exports = {
         db.LandingPage.findAll()
             .then(function(data) {
                 res.render('landingPageData', {data: data});
+            });
+    },
+    extract: function(req, res) {
+        db.LandingPage.findAll()
+            .then(function(data) {
+                res.render('landingPageExtractData', {data: data});
             });
     }
 }

@@ -8,4 +8,6 @@ router.post('/display', landingPageController.submit);
 
 router.get('/data', landingPageController.data);
 
+router.get('/data/extract', landingPageController.extract);
+
 module.exports = router;
