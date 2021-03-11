@@ -21,7 +21,7 @@ module.exports = {
 
         let landingPageJSON = JSON.stringify(landingPage);
 
-        fs.appendFileSync('landingPage.json', landingPageJSON);
+        fs.writeFileSync('landingPage.json', landingPageJSON);
 
         db.LandingPage.create({
             email: req.body.email,
