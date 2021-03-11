@@ -13,11 +13,10 @@
                 <%= users[i].first_name %> <%= users[i].last_name %> -
                 <%= users[i].email %> -
                 <%= users[i].phone %> -
-                <a href="/admins/create/<%=users[i].id%>">Admin: <%= users[i].admin %></a>
+                Admin: <%= users[i].admin %>
             </li>
         <% } %> 
     </ul>
-    <a download="usersInfo" href="https://water-fresh-ec.herokuapp.com/admins/usersList/extract">Descargar Información</a>
     
 </body>
 </html>

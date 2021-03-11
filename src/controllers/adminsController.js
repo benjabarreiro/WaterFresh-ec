@@ -28,10 +28,22 @@ module.exports = {
                 res.render('distributorsList.ejs', {distributors:distributors});
             })
     },
+    distributorsExtract: function(req, res) {
+        db.Distributors.findAll()
+            .then(function(distributors) {
+                res.render('distributorsExtractData.ejs', {distributors: distributors});
+            })
+    },
     usersList: function(req, res) {
         db.Users.findAll()
             .then(function(users) {
                 res.render('userList.ejs', {users:users});
+            })
+    },
+    usersExtract: function(req, res) {
+        db.Users.findAll()
+            .then(function(users) {
+                res.render('usersExtractData.ejs', {users: users});
             })
     },
     newAdmin: function(req, res) {

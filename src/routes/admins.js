@@ -9,8 +9,12 @@ router.get('/list', adminsController.admin);
 // DISTRIBUTOR'S LIST
 router.get('/distributorsList', adminsController.distributorsList);
 
+router.get('/distributorsList/extract', adminsController.distributorsExtract);
+
 // USER'S LIST
 router.get('/usersList', adminsController.usersList);
+
+router.get('/usersList/extract', adminsController.usersExtract);
 
 // CREATE ADMIN
 router.get('/create/:id', adminsController.newAdmin);
