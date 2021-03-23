@@ -77,35 +77,35 @@ h2.ourProductslp {
     color: white;
 }
 
-div.col-lg-3 {
+section.product_sectionlp div.container div.row div.col-lg-3 {
     height: 280px;
 }
 
-div.col-lg-3 div.backgroundlp {
+section.product_sectionlp div.container div.row div.col-lg-3 div.backgroundlp {
     background-color: whitesmoke;
     height: 89%;
 }
 
-div.col-lg-3 div.backgroundlp div.img-container_product1lp {
+section.product_sectionlp div.container div.row div.col-lg-3 div.backgroundlp div.img-container_product1lp {
     display: inline-flex;
     min-height: 50%;
     margin-bottom: 0;
 }
 
-div.col-lg-3 div.backgroundlp div.img-container_product1lp img {
+section.product_sectionlp div.container div.row div.col-lg-3 div.backgroundlp div.img-container_product1lp img {
     width: 100%;
     height: 100%;
     margin-bottom: 0;
 }
 
-div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp {
+section.product_sectionlp div.container div.row div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp {
     display: flex;
     justify-content: space-between;
     margin-right: 1%;
     margin-left: 1%;
 }
 
-div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp span.title-containerlp {
+section.product_sectionlp div.container div.row div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp span.title-containerlp {
     line-height: 18px;
     font-size: 18px;
     font-weight: 500;
@@ -113,7 +113,7 @@ div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp span.title
     width: 80%;
 }
 
-div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp span.price-containerlp {
+section.product_sectionlp div.container div.row div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp span.price-containerlp {
     line-height: 18px;
     font-size: 18px;
     font-weight: 700;
@@ -200,35 +200,35 @@ div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp span.price
         color: white;
     }
     
-    div.col-lg-3 {
+    section.product_sectionlp div.container div.row div.col-lg-3 {
         height: 280px;
     }
     
-    div.col-lg-3 div.backgroundlp {
+    section.product_sectionlp div.container div.row div.col-lg-3 div.backgroundlp {
         background-color: whitesmoke;
         height: 89%;
     }
     
-    div.col-lg-3 div.backgroundlp div.img-container_product1lp {
+    section.product_sectionlp div.container div.row div.col-lg-3 div.backgroundlp div.img-container_product1lp {
         display: inline-flex;
         min-height: 50%;
         margin-bottom: 0;
     }
     
-    div.col-lg-3 div.backgroundlp div.img-container_product1lp img {
+    section.product_sectionlp div.container div.row div.col-lg-3 div.backgroundlp div.img-container_product1lp img {
         width: 100%;
         height: 100%;
         margin-bottom: 0;
     }
     
-    div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp {
+    section.product_sectionlp div.container div.row div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp {
         display: flex;
         justify-content: space-between;
         margin-right: 1%;
         margin-left: 1%;
     }
     
-    div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp span.title-containerlp {
+    section.product_sectionlp div.container div.row div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp span.title-containerlp {
         line-height: 18px;
         font-size: 18px;
         font-weight: 500;
@@ -236,7 +236,7 @@ div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp span.price
         width: 80%;
     }
     
-    div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp span.price-containerlp {
+    section.product_sectionlp div.container div.row div.col-lg-3 div.backgroundlp div.product-infolp div.span-containerlp span.price-containerlp {
         line-height: 18px;
         font-size: 18px;
         font-weight: 700;

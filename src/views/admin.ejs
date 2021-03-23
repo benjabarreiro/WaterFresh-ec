@@ -5,18 +5,46 @@
     <%- include('partials/header.ejs') %> 
     <section class="admins_section">
         <h1 class="admins-h1">Listado de productos:</h1>
-        <% for(let i=0; i<products.length; i++) { %>
-            <span class="admins-list"> <%= products[i].title %> </span><br>
-            <a class="admins-a" href="/admins/product/edit/<%= products[i].id %> ">Editar</a>
-            <form action="/admins/product/delete/<%= products[i].id %>?_method=DELETE" method="POST">
-                <button type="submit">Borrar Producto</button>
-            </form>
-        <% } %>
-        <a class="admins-a" href="/admins/distributorsList">Ver listado de distribuidores</a><br>
-        <a class="admins-a" href="/admins/usersList">Ver listado de usuarios</a><br>
-        <a class="admins-a" href="/landingPage/data">Ver datos ingresados de la landing page</a><br>
-        <a class="admins-a" href="/landingPage/display">Ir a la landing page</a><br>
-        <a class="admins-a" href="/admins/product/create">Crear Producto</a>
+
+        <div class="container">
+
+            <div class="row">
+
+                <% for(let i=0; i<products.length; i++) { %>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 admins-col">
+                        <div class="background-admin">
+                            <div class="img-container_product1">
+                                <img src="/img-db/<%= products[i].img_url %> " alt="">
+                            </div>
+                            <div class="product-info-admin">
+                                <span class="admins-list"> <%= products[i].title %> </span><br>
+                                <a class="admins-a" href="/admins/product/edit/<%= products[i].id %> ">Editar</a>
+                                <form action="/admins/product/delete/<%= products[i].id %>?_method=DELETE" method="POST">
+                                    <button type="submit">Borrar Producto</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                <% } %>
+
+            </div>
+
+        </div>
+        <div class="ext-admins-a">
+            <a class="admins-a" href="/admins/distributorsList">Ver listado de distribuidores</a>
+        </div>
+        <div class="ext-admins-a">
+            <a class="admins-a" href="/admins/usersList">Ver listado de usuarios</a>
+        </div>
+        <div class="ext-admins-a">
+            <a class="admins-a" href="/landingPage/data">Ver datos ingresados de la landing page</a>
+        </div>
+        <div class="ext-admins-a">
+            <a class="admins-a" href="/landingPage/display">Ir a la landing page</a>
+        </div>
+        <div class="ext-admins-a">
+            <a class="admins-a" href="/admins/product/create">Crear Producto</a>
+        </div>
     </section>
 </body>
 </html>

@@ -1,18 +1,258 @@
 section.admins_section {
-    width: 84%;
+    width: 85%;
     position: relative;
-    left: 16%;
+    left: 15%;
 }
 
 h1.admins-h1 {
+    margin-left: 1%;
+    margin-bottom: 2%;
+    font-weight: 700;
     font-size: 30px;
+}
+
+section.admins_section div.col-lg-3 {
+    height: 340px;
+}
+
+section.admins_section div.col-lg-3 div.background-admin {
+    background-color: whitesmoke;
+    height: 89%;
+}
+
+section.admins_section div.col-lg-3 div.background-admin div.img-container_product1 {
+    display: inline-flex;
+    min-height: 50%;
+    margin-bottom: 0;
+}
+
+section.admins_section div.col-lg-3 div.background-admin div.img-container_product1 img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+}
+
+section.admins_section div.col-lg-3 div.background-admin div.product-info-admin {
+    min-height: 50%;
 }
 
 span.admins-list {
     font-size: 20px;
 }
 
-a.admins-a {
+section.admins_section div.col-lg-3 div.background-admin div.product-info-admin a.admins-a {
     color: black;
     font-size: 20px;
+}
+
+div.ext-admins-a {
+    display: flex;
+    justify-content: center;
+}
+
+div.ext-admins-a a.admins-a {
+    font-size: 18px;
+    color: black;
+}
+
+@media (max-width: 1440px) {
+    section.admins_section div.col-lg-3 {
+        height: 340px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    section.admins_section {
+        width: 85%;
+        position: relative;
+        left: 15%;
+    }
+
+    h1.admins-h1 {
+        margin-left: 1%;
+        margin-bottom: 2%;
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    section.admins_section div.container {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    section.admins_section div.container div.row {
+        margin: 0;
+    }
+
+    section.admins_section div.col-lg-3 {
+        height: 250px;
+    }
+
+    section.admins_section div.col-lg-3 div.background-admin div.product-info-admin span.admins-list {
+        line-height: 18px;
+        font-size: 15px;
+        font-weight: 500;
+        color: black;
+        width: 80%;
+    }
+
+    section.admins_section div.col-lg-3 div.background-admin div.product-info-admin a.admins-a {
+        line-height: 18px;
+        font-size: 15px;
+        font-weight: 500;
+        color: black;
+    }
+
+    div.ext-admins-a {
+        display: flex;
+        justify-content: center;
+    }
+
+    div.ext-admins-a a.admins-a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    section.admins_section div.container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    section.admins_section div.col-md-6 {
+        height: 300px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    section.admins_section {
+        width: 100%;
+        position: relative;
+        left: 0%;
+        top: 15%;
+    }
+
+    h1.admins-h1 {
+        margin-left: 23%;
+        margin-bottom: 2%;
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    section.admins_section div.container {
+        width: 67%;
+        margin: 0 auto;
+    }
+
+    section.admins_section div.col-12 {
+        height: 290px;
+    }
+
+    section.admins_section div.col-12 div.background-admin div.product-info-admin span.admins-list {
+        line-height: 18px;
+        font-size: 14px;
+        font-weight: 500;
+        color: black;
+        width: 80%;
+    }
+
+    section.admins_section div.col-lg-3 div.background-admin div.product-info-admin a.admins-a {
+        line-height: 18px;
+        font-size: 14px;
+        font-weight: 500;
+        color: black;
+    }
+}
+
+@media (max-width: 375px) {
+
+    section.admins_section {
+        width: 100%;
+        position: relative;
+        left: 0%;
+        top: 15%;
+    }
+
+    h1.admins-h1 {
+        margin-left: 23%;
+        margin-bottom: 2%;
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    section.admins_section div.container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    section.admins_section div.col-12 {
+        height: 300px;
+    }
+
+    section.admins_section div.col-12 div.background-admin div.product-info-admin span.admins-list {
+        line-height: 18px;
+        font-size: 14px;
+        font-weight: 500;
+        color: black;
+        width: 80%;
+    }
+
+    section.admins_section div.col-lg-3 div.background-admin div.product-info-admin a.admins-a {
+        line-height: 18px;
+        font-size: 14px;
+        font-weight: 500;
+        color: black;
+    }
+}
+
+@media (max-width: 320px) {
+    section.admins_section {
+        width: 100%;
+        position: relative;
+        left: 0%;
+        top: 15%;
+    }
+
+    h1.admins-h1 {
+        margin-left: 14%;
+        margin-bottom: 2%;
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    section.admins_section div.container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    section.admins_section div.col-12 {
+        height: 270px;
+    }
+
+    section.admins_section div.col-12 div.background-admin div.product-info-admin span.admins-list {
+        line-height: 18px;
+        font-size: 14px;
+        font-weight: 500;
+        color: black;
+        width: 80%;
+    }
+
+    section.admins_section div.col-lg-3 div.background-admin div.product-info-admin a.admins-a {
+        line-height: 18px;
+        font-size: 14px;
+        font-weight: 500;
+        color: black;
+    }
+
+    div.ext-admins-a {
+        display: flex;
+        justify-content: center;
+    }
+
+    div.ext-admins-a a.admins-a {
+        font-size: 16px;
+    }
 }
