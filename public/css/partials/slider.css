@@ -135,7 +135,7 @@ div.container div.row div.col h1.titulo {
     }
 
     div.container div.row div.col h1.titulo {
-        font-size: 70px;
+        font-size: 55px;
     }
 
     .subtitulo {
@@ -170,7 +170,7 @@ div.container div.row div.col h1.titulo {
     }
 
     div.container div.row div.col h1.titulo {
-        font-size: 70px;
+        font-size: 60px;
     }
 
     .subtitulo {
@@ -214,11 +214,11 @@ div.container div.row div.col h1.titulo {
     /* MATERIALIZE STYLES */
 
     .col {
-        height: 270px;
+        height: 350px;
     }
 
     .carousel {
-        max-height: 75%;
+        max-height: 80%;
         margin: 0;
     }
     .carousel .carousel-item {
@@ -228,6 +228,6 @@ div.container div.row div.col h1.titulo {
         align-items: center;
         user-select: none;
         width: 70%;
-        height: 90%;
+        height: 80%;
     }
 }

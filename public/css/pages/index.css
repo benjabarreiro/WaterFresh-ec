@@ -9,11 +9,11 @@ section.products_section {
 }
 
 h2.ourProducts {
-    margin-left: 1%;
     margin-bottom: 2%;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 35px;
     color: white;
+    text-align: center;
 }
 
 div.col-lg-3 {
@@ -22,7 +22,7 @@ div.col-lg-3 {
 
 div.col-lg-3 div.background {
     background-color: whitesmoke;
-    height: 89%;
+    height: 87%;
 }
 
 div.col-lg-3 div.background div.img-container_product1 {
@@ -124,10 +124,9 @@ div#detailContainer {
     }
 
     h2.ourProducts {
-        margin-left: 1%;
         margin-bottom: 2%;
         font-weight: 700;
-        font-size: 25px;
+        font-size: 35px;
     }
 
     section.products_section div.container {
@@ -141,6 +140,10 @@ div#detailContainer {
 
     section.products_section div.col-lg-3 {
         height: 200px;
+    }
+
+    section.products_section div.col-lg-3 div.background {
+        height: 92%;
     }
 
     section.products_section div.col-lg-3 div.background div.product-info div.span-container span.title-container {
@@ -161,6 +164,13 @@ div#detailContainer {
 
 @media (max-width: 768px) {
 
+    h2.ourProducts {
+        margin-top: 4%;
+        margin-bottom: 2%;
+        font-weight: 700;
+        font-size: 30px;
+    }
+
     section.products_section div.container {
         width: 90%;
         margin: 0 auto;
@@ -168,6 +178,10 @@ div#detailContainer {
 
     section.products_section div.col-md-6 {
         height: 270px;
+    }
+
+    section.products_section div.col-md-6 div.background {
+        height: 84%;
     }
 }
 
@@ -184,7 +198,7 @@ div#detailContainer {
     }
 
     h2.ourProducts {
-        margin-left: 23%;
+        margin-top: 0;
         margin-bottom: 2%;
         font-weight: 700;
         font-size: 25px;
@@ -197,6 +211,10 @@ div#detailContainer {
 
     section.products_section div.col-12 {
         height: 270px;
+    }
+
+    section.products_section div.col-12 div.background {
+        height: 81%;
     }
 
     section.products_section div.col-12 div.background div.product-info div.span-container span.title-container {
@@ -228,7 +246,6 @@ div#detailContainer {
     }
 
     h2.ourProducts {
-        margin-left: 23%;
         margin-bottom: 2%;
         font-weight: 700;
         font-size: 25px;
@@ -241,6 +258,10 @@ div#detailContainer {
 
     section.products_section div.col-12 {
         height: 280px;
+    }
+
+    section.products_section div.col-12 div.background {
+        height: 83%;
     }
 
     section.products_section div.col-12 div.background div.product-info div.span-container span.title-container {
@@ -271,7 +292,7 @@ div#detailContainer {
     }
 
     h2.ourProducts {
-        margin-left: 14%;
+        margin-top: 2%;
         margin-bottom: 2%;
         font-weight: 700;
         font-size: 25px;
@@ -284,6 +305,10 @@ div#detailContainer {
 
     section.products_section div.col-12 {
         height: 250px;
+    }
+
+    section.products_section div.col-12 div.background {
+        height: 80%;
     }
 
     section.products_section div.col-12 div.background div.product-info div.span-container span.title-container {
