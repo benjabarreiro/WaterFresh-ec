@@ -384,9 +384,12 @@ aside.menu div.social-media_container a.second-icon i {
     }
 
     aside.menu div.logo-container {
-        width: 30%;
-        height: 100%;
+        width: 28%;
+        height: 95%;
         margin-bottom: 0;
+        position: relative;
+        top: 7%;
+        right: 3%;
     }
 
     aside.menu div.logo-container img.logo {
@@ -417,7 +420,7 @@ aside.menu div.social-media_container a.second-icon i {
         width: 175%;
         margin-bottom: 0;
         position: absolute;
-        left: 27%;
+        left: 25%;
         bottom: 50%;
 
     }
@@ -427,7 +430,7 @@ aside.menu div.social-media_container a.second-icon i {
         width: 100%;
         margin-bottom: 0;
         position: absolute;
-        left: 27%;
+        left: 25%;
         bottom: 20%;
     }
 
@@ -494,8 +497,11 @@ aside.menu div.social-media_container a.second-icon i {
 
     aside.menu div.logo-container {
         width: 30%;
-        height: 100%;
+        height: 95%;
         margin-bottom: 0;
+        position: relative;
+        top: 7%;
+        right: 4%;
     }
 
     aside.menu div.logo-container img.logo {
@@ -505,46 +511,48 @@ aside.menu div.social-media_container a.second-icon i {
 
     aside.menu div.menu-container {
         display: inline;
-        text-align: left;
+        text-align: initial;
     }
 
     aside.menu div.menu-container div.button-container {
         display: inline;
         position: absolute;
-        right: 22%;
-        top: 30%;
+        left: 27%;
+        top: 20%;
         z-index: 1000;
     }
 
     aside.menu div.menu-container div.button-container button {
+        padding: 0 4%;
         font-size: 6px;
         display: inline;
     }
 
+    aside.menu div.menu-container div.button-container button i {
+        padding: 0;
+    }
+
     aside.menu div.menu-container a.first-a-header {
-        font-size: 14px;
-        width: 30%;
+        font-size: 12px;
+        width: 70%;
         margin-bottom: 0;
         position: absolute;
-        left: 32%;
-        bottom: 42%;
+        left: 46%;
+        top: 15%;
 
     }
     
     aside.menu div.menu-container a.second-a-header {
-        font-size: 14px;
+        font-size: 12px;
         width: 100%;
         margin-bottom: 0;
         position: absolute;
-        left: 32%;
-        bottom: 12%;
+        left: 64.5%;
+        bottom: 15%;
     }
 
     aside.menu div.social-media_container {
         display: inline;
-        position: relative;
-        left: 80%;
-        bottom: 65%;
     }
 
     aside.menu div.social-media_container a i {
@@ -552,14 +560,20 @@ aside.menu div.social-media_container a.second-icon i {
     }
 
     aside.menu div.social-media_container a.first-icon i {
+        position: fixed;
+        left: 2.3%;
+        bottom: 11%;
         margin-right: 0;
         color: #3b5998;
         background-color: whitesmoke;
-        padding: 1% 2%;
+        padding: 1% 2.5%;
         border-radius: 5px;
     }
     
     aside.menu div.social-media_container a.second-icon i {
+        position: fixed;
+        bottom: 3%;
+        left: 2.3%;
         margin-right: 0;
         color: white;
         background: #f09433; 
@@ -567,26 +581,26 @@ aside.menu div.social-media_container a.second-icon i {
         background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
         background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-        padding: 0.5% 0.9%;
+        padding: 0.9% 1.6%;
         border-radius: 5px;
     }
 
     .whatsapp {
         position: fixed;
-        height: 8%;
-        width: 14%;
+        height: 6.5%;
+        width: 10%;
         bottom: 3%;
-        right: 3%;
+        right: 2.7%;
         background-color:#25d366;
         color:#FFF;
         border-radius: 50px;
         text-align:center;
-        font-size: 35px;
+        font-size: 25px;
       }
 
       .whatsapp-icon {
         margin-top: 0%;
         position: relative;
-        bottom: 18%;
+        bottom: 6%;
       }
 }
